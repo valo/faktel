@@ -1,0 +1,2 @@
+1. Avotmatizirano bindvane na poletata na RowData sys storage file po tipove
+2. Da se napravi input, filter, i output da imat obsht interface za da mogat da se izvikvat kaskadno

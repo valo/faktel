@@ -1,0 +1,327 @@
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+/*Christmas decoration Styles START*/
+/*
+div.header {
+	/* background: #8dc919 url(myglobul.gif) no-repeat 100% 100%; */
+	/*background: #81d10a url(myglobul.gif) no-repeat 100% 100%;
+}
+*/
+/*Christmas decoration Styles END*/
+div.header {
+	margin: 0 auto;
+	padding: 0;
+	width: 770px;
+	height: 80px;
+	background-color: #8dc919;
+	background: #8dc919 url(../i/Bg/div_header.jpg) no-repeat 100% 100%;
+	clear: both;
+}
+body.large div.header {
+	width: 940px;
+}
+div.footer {
+	margin: 0 auto;
+	padding: 10px 10px 20px 10px;
+	width: 750px;
+	clear: both;
+	background-color: #fff;
+}
+body.large div.footer {
+	width: 920px;
+}
+div.wrapper {
+	margin: 0 auto;
+	padding: 0 10px 17px 10px;
+	width: 750px;
+	clear: both;
+	overflow: hidden;
+	background: #fff url(../i/Bg/div_wrapper.gif) repeat-x 0 0;
+}
+body.large div.wrapper {
+	width: 920px;
+}
+div.clear {
+	clear: both;
+}
+body.xm div.main {
+	float: right;
+	width: 490px;
+	margin: 0 6px 0 0;
+}
+body.large div.main {
+	width: 650px;
+}
+body.xm div.extra {
+	width: 240px;
+}
+div.primary {
+	margin: 0 -5px 0 0;
+	padding: 0;
+	float: right;
+	width: 240px;
+	position: relative;
+}
+div.secondary {
+	float: left;
+	width: 240px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+div.system-info {
+	margin: 0;
+	padding: 0;
+	background: #fff url(../i/Bg/div_user.gif) repeat-x 0 50%;
+}
+div.section {
+	margin: 0 0 15px 0;
+	padding: 3px 15px 5px 15px;
+	width: 466px;
+	background: #f8f8f8 url(../i/Bg/div_section.gif) repeat-y 0 0;
+	position: relative;
+}
+body.large div.section {
+	width: 626px;
+	background: #f8f8f8 url(../i/Bg/div_section_large.gif) repeat-y 0 0;
+}
+div.primary div.section {
+	width: 210px;
+	background: #f8f8f8 url(../i/Bg/div_section_primary.gif) repeat-y 0 0;
+}
+div.section div.sub-section {
+	margin: -1px 0 15px 0;
+	padding: 5px 15px 7px 15px;
+	width: 436px;
+	background: #f8f8f8 url(../i/Bg/div_sub_section.gif) repeat-y 0 0;
+	/*background: #f8f8f8;*/
+	position: relative;
+}
+div.section div.sub-section1 {
+	margin: -1px 0 15px 0;
+	padding: 5px 15px 7px 15px;
+	width: 436px;
+	background: #f8f8f8;
+	position: relative;
+}
+div.function-section {
+	margin: -14px 0 10px 0;
+	padding: 10px 15px 8px 15px;
+	width: 466px;
+	background: #fff url(../i/Bg/div_function_section.gif) no-repeat 50% 100%;
+	position: relative;
+	z-index: 1000;
+}
+div.funcall {
+	margin: -14px 0 10px 0;
+	padding: 10px 15px 8px 15px;
+	width: 466px;
+	background: #fff url(../i/Bg/f_div_function_section.gif) no-repeat 50% 100%;
+	position: relative;
+	z-index: 1000;
+}
+div.hr {
+	margin: -6px 0 20px 0;
+	padding: 0;
+	width: 496px;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	clear: both;
+	background: transparent url(../i/Bg/div_hr.gif) no-repeat 0 100%;
+	height: 6px;
+}
+div.sub-section div.hr {
+	margin: -6px 0 20px 0;
+	padding: 0;
+	width: 466px;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	clear: both;
+	background: transparent url(../i/Bg/div_hr_subsection.gif) no-repeat 0 100%;
+	height: 6px;
+}
+body.large div.hr {
+	width: 656px;
+	background: transparent url(../i/Bg/div_hr_large.gif) no-repeat 0 100%;
+}
+div.primary div.hr {
+	width: 240px;
+	background: transparent url(../i/Bg/div_hr_primary.gif) no-repeat 0 100%;
+}
+div.tools {
+	margin: -21px 0 20px 0;
+	padding: 5px 15px 0 15px;
+	width: 466px;
+	height: 26px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	clear: both;
+	background: #eee url(../i/Bg/div_tools.gif) no-repeat 0 100%;
+	border-top: 1px solid #ddd;
+}
+body.large div.tools {
+	width: 626px;
+	background: #eee url(../i/Bg/div_tools_large.gif) no-repeat 0 100%;
+}
+body.funcall div.tools {
+	margin: 0 0 20px 0;
+}
+div.submenus {
+	margin: 5px 0 0 0; /*changed on 14.08.2008 - main menu redesign. Previous value - margin: 15px 0 0 0;*/
+	padding: 4px 0 0 0;
+	background: transparent url(../i/Bg/div_submenus.gif) repeat-x 0 0;
+	/* border-top: 1px solid #666; */ /* changed on 14.08.2008 - main menu redesign. */
+}
+div.category-summary {
+	margin: 10px 0 0 0;
+	width: 496px;
+	float: left;
+	background: #fff url(../i/Bg/div_catsummary.gif) no-repeat 0 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+div.summary {
+	margin: 5px 0 5px 195px;
+	width: 290px;
+}
+div.panagation {
+	margin: 0 0 10px 0;
+	padding: 0 5px;
+	background: transparent url(../i/Bg/div_panagation.gif) no-repeat 0 0;
+	width: 458px;
+	float: left;
+}
+body.funcall div.panagation {
+	margin: 0;
+}
+div.preview-panagation {
+	margin: 0 0 5px 0;
+	padding: 8px 10px 0 10px;
+	background: transparent url(../i/Bg/div_preview_panagation.gif) no-repeat 0 0;
+	width: 448px;
+	height: 29px;
+	float: left;
+}
+body.large div.preview-panagation {
+	background: transparent url(../i/Bg/div_preview_panagation_large.gif) no-repeat 0 0;
+	width: 606px;
+}
+
+body.large div.white-panagation {
+            background: transparent url(../i/Bg/div_prev_panagation_large_white.gif) no-repeat 0 0;
+            width: 606px;
+}
+
+div.image {
+	width: 140px;
+	float: left;
+}
+div.description {
+	width: 320px;
+	float: right;
+}
+table.sms div {
+	margin: 5px 0 0 0;
+}
+div.orderinfo {
+	margin: 10px 0 0 0;
+	padding: 5px 10px;
+	background-color: #ffffe5;
+	background: #ffffe5 url(../i/Bg/ul_downloadlist.gif) repeat-x 0 100%;
+	border-top: 1px solid #dcdcdc;
+}
+div.yourdetails {
+	margin: 10px 0;
+	padding: 0;
+	width: 50%;
+	background: #fff url(../i/Bg/ul_downloadlist.gif) repeat-x 0 100%;
+	float: left;
+}
+div.multimedia-details {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+}
+div.gamedescription {
+	margin: 0 15px 10px;
+	border-top: 1px solid #DCDCDC;
+}
+div.loggedinfo {
+	margin: -5px 0 0 0;
+	padding: 10px 0 10px 30px;
+	background: #ff9 url(../i/Bg/p_unreadsms.gif) 10px 50% no-repeat;
+}
+
+div.listhr{
+    margin: 0;
+    padding: 0;
+    width: 496px;    
+    background: transparent url(../i/Bg/div_hr.gif) no-repeat;
+    height: 7px;
+}
+
+.separator_hr {
+	padding: 10px 0px;
+}
+
+div.panagation-melody {
+	margin: 0;
+	padding: 12px 10px 0 10px;
+	background: transparent url(../i/Bg/div_panagation_melody.gif) no-repeat 0 0;
+	height: 28px;
+}
+div.melody-listen {
+	margin: 0 0 0 0;
+	padding: 0;
+	width: 120px;
+	float: left;
+}
+div.melody-details {
+	margin: 0 0 0 0;
+	padding: 0;
+	/*width: 300px;*/
+	white-space: nowrap;
+	float: inherit;
+}
+div.funcall-home {
+	margin: 0 0 15px 0;
+	padding: 0 0 7px 0;
+	background: transparent url(../i/Bg/div_my_funcall_home.gif) no-repeat 50% 190px;
+	position: relative;
+	width: 496px;
+}
+div.funcall-home div.hr {
+	margin: -6px 0 20px 0;
+	padding: 0;
+	width: 496px;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	clear: both;
+	background: transparent url(../i/Bg/hr_funcall_home.gif) no-repeat 0 100%;
+	height: 6px;
+}
+div.my-funcall {
+	margin: 0 0 15px 0;
+	padding: 0 0 5px 0;
+	background: transparent url(../i/Bg/div_my_funcall.gif) no-repeat 50% 100%;
+	position: relative;
+}
+div.container {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 5px;
+	left: 98px;
+	width: 300px;
+	overflow: hidden;
+	border: 0;
+}

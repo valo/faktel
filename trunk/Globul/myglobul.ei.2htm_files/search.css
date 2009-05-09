@@ -1,0 +1,30 @@
+
+input.search_button{
+	position: relative;
+	top: 4px;
+	left: 0%;
+}
+
+div.main h3.advert-spot  {
+	margin: 0;
+	background: transparent url(../i/Bg/adv_spot.gif) no-repeat 0 0;
+}
+body.large div.main h3.advert-spot  {
+	width: 646px;
+	background: transparent url(../i/Bg/adv_spot.gif) no-repeat 0 0;
+}
+div.primary h3.advert-spot {
+	width: 230px;
+	background: transparent url(../i/Bg/adv_spot.gif) no-repeat 0 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+
+
+
+

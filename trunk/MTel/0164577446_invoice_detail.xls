@@ -1,0 +1,2320 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="php">
+<style>
+				table {mso-displayed-decimal-separator:"."; mso-displayed-thousand-separator:" ";}
+				td{mso-protection:locked visible; white-space:nowrap;}
+				.x1{mso-number-format:0;}
+				.x2{mso-number-format:"@";}
+				.x3{mso-number-format:0.00;}
+				</style><!--[if gte mso 9]><xml>
+						 <x:ExcelWorkbook>
+						  <x:ExcelWorksheets>
+						   <x:ExcelWorksheet>
+							<x:Name>0164577446</x:Name>
+							<x:WorksheetOptions>
+							 <x:Selected/>
+							 <x:ProtectContents>False</x:ProtectContents>
+							 <x:ProtectObjects>False</x:ProtectObjects>
+							 <x:ProtectScenarios>False</x:ProtectScenarios>
+							</x:WorksheetOptions>
+						   </x:ExcelWorksheet>
+						  </x:ExcelWorksheets>
+						  <x:WindowHeight>12660</x:WindowHeight>
+						  <x:WindowWidth>15180</x:WindowWidth>
+						  <x:WindowTopX>480</x:WindowTopX>
+						  <x:WindowTopY>135</x:WindowTopY>
+						  <x:ProtectStructure>False</x:ProtectStructure>
+						  <x:ProtectWindows>False</x:ProtectWindows>
+						 </x:ExcelWorkbook>
+						</xml><![endif]--><body>
+<table border="1">
+<tr>
+<td>No</td>
+<td>SIM Карта</td>
+<td>Телефонен номер</td>
+<td>Такса (лв.)</td></tr>
+<tr>
+<td class=x1 align=right>
+1</td>
+<td class=x2>
+8935901087001503099</td>
+<td class=x2>
+359888086789</td>
+<td class=x3 align=right>
+21.34</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+2</td>
+<td class=x2>
+8935901087001582846</td>
+<td class=x2>
+359885070446</td>
+<td class=x3 align=right>
+10.11</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+3</td>
+<td class=x2>
+8935901087001667308</td>
+<td class=x2>
+359887061866</td>
+<td class=x3 align=right>
+5.86</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+4</td>
+<td class=x2>
+8935901087001841747</td>
+<td class=x2>
+359889070709</td>
+<td class=x3 align=right>
+35.14</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+5</td>
+<td class=x2>
+8935901087001931308</td>
+<td class=x2>
+359886091070</td>
+<td class=x3 align=right>
+25.23</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+6</td>
+<td class=x2>
+8935901087002012264</td>
+<td class=x2>
+359885077147</td>
+<td class=x3 align=right>
+44.66</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+7</td>
+<td class=x2>
+8935901087002012348</td>
+<td class=x2>
+359889098746</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+8</td>
+<td class=x2>
+8935901087002096952</td>
+<td class=x2>
+359886067009</td>
+<td class=x3 align=right>
+30.36</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+9</td>
+<td class=x2>
+8935901087002098776</td>
+<td class=x2>
+359886090553</td>
+<td class=x3 align=right>
+18.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+10</td>
+<td class=x2>
+8935901087002098784</td>
+<td class=x2>
+359886055615</td>
+<td class=x3 align=right>
+10.03</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+11</td>
+<td class=x2>
+8935901087002098792</td>
+<td class=x2>
+359886055898</td>
+<td class=x3 align=right>
+44.14</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+12</td>
+<td class=x2>
+8935901087002098800</td>
+<td class=x2>
+359886055610</td>
+<td class=x3 align=right>
+9.73</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+13</td>
+<td class=x2>
+8935901087002175616</td>
+<td class=x2>
+359886089293</td>
+<td class=x3 align=right>
+22.49</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+14</td>
+<td class=x2>
+8935901087002224810</td>
+<td class=x2>
+359886006010</td>
+<td class=x3 align=right>
+108.88</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+15</td>
+<td class=x2>
+8935901087002225387</td>
+<td class=x2>
+359885005687</td>
+<td class=x3 align=right>
+40.19</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+16</td>
+<td class=x2>
+8935901087002225536</td>
+<td class=x2>
+359886098958</td>
+<td class=x3 align=right>
+29.99</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+17</td>
+<td class=x2>
+8935901087002225601</td>
+<td class=x2>
+359886096361</td>
+<td class=x3 align=right>
+362.30</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+18</td>
+<td class=x2>
+8935901087002225619</td>
+<td class=x2>
+359886095751</td>
+<td class=x3 align=right>
+32.68</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+19</td>
+<td class=x2>
+8935901087002271365</td>
+<td class=x2>
+359885007484</td>
+<td class=x3 align=right>
+126.53</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+20</td>
+<td class=x2>
+8935901087002463822</td>
+<td class=x2>
+359885055757</td>
+<td class=x3 align=right>
+8.95</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+21</td>
+<td class=x2>
+8935901087003404080</td>
+<td class=x2>
+359885071147</td>
+<td class=x3 align=right>
+34.86</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+22</td>
+<td class=x2>
+8935901087011390644</td>
+<td class=x2>
+359889101047</td>
+<td class=x3 align=right>
+9.56</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+23</td>
+<td class=x2>
+8935901087011487226</td>
+<td class=x2>
+359889199073</td>
+<td class=x3 align=right>
+19.71</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+24</td>
+<td class=x2>
+8935901087011843527</td>
+<td class=x2>
+359889138914</td>
+<td class=x3 align=right>
+34.42</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+25</td>
+<td class=x2>
+8935901087011968035</td>
+<td class=x2>
+359889111992</td>
+<td class=x3 align=right>
+18.87</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+26</td>
+<td class=x2>
+8935901087012000929</td>
+<td class=x2>
+359886199599</td>
+<td class=x3 align=right>
+50.55</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+27</td>
+<td class=x2>
+8935901087012161960</td>
+<td class=x2>
+359885151224</td>
+<td class=x3 align=right>
+15.02</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+28</td>
+<td class=x2>
+8935901087012201162</td>
+<td class=x2>
+359885119553</td>
+<td class=x3 align=right>
+21.78</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+29</td>
+<td class=x2>
+8935901087012202095</td>
+<td class=x2>
+359885118688</td>
+<td class=x3 align=right>
+41.71</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+30</td>
+<td class=x2>
+8935901087012202129</td>
+<td class=x2>
+359885118677</td>
+<td class=x3 align=right>
+39.63</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+31</td>
+<td class=x2>
+8935901087012202657</td>
+<td class=x2>
+359885122066</td>
+<td class=x3 align=right>
+16.67</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+32</td>
+<td class=x2>
+8935901087012202665</td>
+<td class=x2>
+359885111797</td>
+<td class=x3 align=right>
+74.27</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+33</td>
+<td class=x2>
+8935901087012283301</td>
+<td class=x2>
+359886199345</td>
+<td class=x3 align=right>
+45.42</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+34</td>
+<td class=x2>
+8935901087012283830</td>
+<td class=x2>
+359885122266</td>
+<td class=x3 align=right>
+28.56</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+35</td>
+<td class=x2>
+8935901087012284077</td>
+<td class=x2>
+359885115888</td>
+<td class=x3 align=right>
+39.97</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+36</td>
+<td class=x2>
+8935901087012810194</td>
+<td class=x2>
+359885195139</td>
+<td class=x3 align=right>
+25.34</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+37</td>
+<td class=x2>
+8935901087012902462</td>
+<td class=x2>
+359885155023</td>
+<td class=x3 align=right>
+44.69</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+38</td>
+<td class=x2>
+8935901087013524794</td>
+<td class=x2>
+359884170717</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+39</td>
+<td class=x2>
+8935901087013843970</td>
+<td class=x2>
+359885151236</td>
+<td class=x3 align=right>
+10.10</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+40</td>
+<td class=x2>
+8935901087014002915</td>
+<td class=x2>
+359888111701</td>
+<td class=x3 align=right>
+9.03</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+41</td>
+<td class=x2>
+8935901087021093907</td>
+<td class=x2>
+359887277218</td>
+<td class=x3 align=right>
+9.20</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+42</td>
+<td class=x2>
+8935901087021294745</td>
+<td class=x2>
+359887296908</td>
+<td class=x3 align=right>
+10.87</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+43</td>
+<td class=x2>
+8935901087021807751</td>
+<td class=x2>
+359887286740</td>
+<td class=x3 align=right>
+36.31</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+44</td>
+<td class=x2>
+8935901087021974296</td>
+<td class=x2>
+359889202949</td>
+<td class=x3 align=right>
+18.69</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+45</td>
+<td class=x2>
+8935901087022577247</td>
+<td class=x2>
+359888238539</td>
+<td class=x3 align=right>
+36.72</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+46</td>
+<td class=x2>
+8935901087022587758</td>
+<td class=x2>
+359888236666</td>
+<td class=x3 align=right>
+59.85</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+47</td>
+<td class=x2>
+8935901087022915405</td>
+<td class=x2>
+359888288088</td>
+<td class=x3 align=right>
+237.36</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+48</td>
+<td class=x2>
+8935901087022915421</td>
+<td class=x2>
+359888288008</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+49</td>
+<td class=x2>
+8935901087022936088</td>
+<td class=x2>
+359888232475</td>
+<td class=x3 align=right>
+38.66</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+50</td>
+<td class=x2>
+8935901087023036367</td>
+<td class=x2>
+359888250208</td>
+<td class=x3 align=right>
+75.17</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+51</td>
+<td class=x2>
+8935901087023266998</td>
+<td class=x2>
+359889212889</td>
+<td class=x3 align=right>
+18.57</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+52</td>
+<td class=x2>
+8935901087023472638</td>
+<td class=x2>
+359885277150</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+53</td>
+<td class=x2>
+8935901087023896661</td>
+<td class=x2>
+359886292323</td>
+<td class=x3 align=right>
+44.09</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+54</td>
+<td class=x2>
+8935901087024043685</td>
+<td class=x2>
+359887289118</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+55</td>
+<td class=x2>
+8935901087024043693</td>
+<td class=x2>
+359885277221</td>
+<td class=x3 align=right>
+27.45</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+56</td>
+<td class=x2>
+8935901087024044683</td>
+<td class=x2>
+359885224620</td>
+<td class=x3 align=right>
+49.81</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+57</td>
+<td class=x2>
+8935901087024044691</td>
+<td class=x2>
+359885224622</td>
+<td class=x3 align=right>
+113.18</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+58</td>
+<td class=x2>
+8935901087024099521</td>
+<td class=x2>
+359887224043</td>
+<td class=x3 align=right>
+11.38</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+59</td>
+<td class=x2>
+8935901087024099547</td>
+<td class=x2>
+359889221820</td>
+<td class=x3 align=right>
+33.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+60</td>
+<td class=x2>
+8935901087024229383</td>
+<td class=x2>
+359885283738</td>
+<td class=x3 align=right>
+10.54</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+61</td>
+<td class=x2>
+8935901087024315315</td>
+<td class=x2>
+359885217414</td>
+<td class=x3 align=right>
+20.28</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+62</td>
+<td class=x2>
+8935901087024315323</td>
+<td class=x2>
+359885206245</td>
+<td class=x3 align=right>
+29.44</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+63</td>
+<td class=x2>
+8935901087024316644</td>
+<td class=x2>
+359885208851</td>
+<td class=x3 align=right>
+9.38</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+64</td>
+<td class=x2>
+8935901087024770550</td>
+<td class=x2>
+359888273888</td>
+<td class=x3 align=right>
+19.26</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+65</td>
+<td class=x2>
+8935901087024771962</td>
+<td class=x2>
+359888250173</td>
+<td class=x3 align=right>
+70.05</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+66</td>
+<td class=x2>
+8935901087025232659</td>
+<td class=x2>
+359887222652</td>
+<td class=x3 align=right>
+117.96</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+67</td>
+<td class=x2>
+8935901087025620788</td>
+<td class=x2>
+359887255511</td>
+<td class=x3 align=right>
+37.14</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+68</td>
+<td class=x2>
+8935901087025795523</td>
+<td class=x2>
+359888268828</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+69</td>
+<td class=x2>
+8935901087025795531</td>
+<td class=x2>
+359888258838</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+70</td>
+<td class=x2>
+8935901087025923851</td>
+<td class=x2>
+359899205772</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+71</td>
+<td class=x2>
+8935901087031064179</td>
+<td class=x2>
+359887306221</td>
+<td class=x3 align=right>
+18.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+72</td>
+<td class=x2>
+8935901087031064187</td>
+<td class=x2>
+359887357312</td>
+<td class=x3 align=right>
+68.67</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+73</td>
+<td class=x2>
+8935901087031472661</td>
+<td class=x2>
+359887370329</td>
+<td class=x3 align=right>
+49.75</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+74</td>
+<td class=x2>
+8935901087031519917</td>
+<td class=x2>
+359887383195</td>
+<td class=x3 align=right>
+27.85</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+75</td>
+<td class=x2>
+8935901087032274884</td>
+<td class=x2>
+359889323598</td>
+<td class=x3 align=right>
+69.72</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+76</td>
+<td class=x2>
+8935901087032336899</td>
+<td class=x2>
+359887318458</td>
+<td class=x3 align=right>
+26.00</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+77</td>
+<td class=x2>
+8935901087032464493</td>
+<td class=x2>
+359887311511</td>
+<td class=x3 align=right>
+30.46</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+78</td>
+<td class=x2>
+8935901087032580637</td>
+<td class=x2>
+359888321004</td>
+<td class=x3 align=right>
+57.30</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+79</td>
+<td class=x2>
+8935901087032878577</td>
+<td class=x2>
+359887367292</td>
+<td class=x3 align=right>
+25.61</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+80</td>
+<td class=x2>
+8935901087033212271</td>
+<td class=x2>
+359889344943</td>
+<td class=x3 align=right>
+17.68</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+81</td>
+<td class=x2>
+8935901087033250602</td>
+<td class=x2>
+359887382657</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+82</td>
+<td class=x2>
+8935901087033420981</td>
+<td class=x2>
+359885358477</td>
+<td class=x3 align=right>
+20.92</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+83</td>
+<td class=x2>
+8935901087033544012</td>
+<td class=x2>
+359889369600</td>
+<td class=x3 align=right>
+31.88</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+84</td>
+<td class=x2>
+8935901087033544046</td>
+<td class=x2>
+359888334491</td>
+<td class=x3 align=right>
+31.40</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+85</td>
+<td class=x2>
+8935901087034807970</td>
+<td class=x2>
+359885301359</td>
+<td class=x3 align=right>
+79.23</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+86</td>
+<td class=x2>
+8935901087034853297</td>
+<td class=x2>
+359888380458</td>
+<td class=x3 align=right>
+50.55</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+87</td>
+<td class=x2>
+8935901087035869557</td>
+<td class=x2>
+359888332150</td>
+<td class=x3 align=right>
+35.07</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+88</td>
+<td class=x2>
+8935901087035869581</td>
+<td class=x2>
+359888354765</td>
+<td class=x3 align=right>
+38.54</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+89</td>
+<td class=x2>
+8935901087036084388</td>
+<td class=x2>
+359888357923</td>
+<td class=x3 align=right>
+16.73</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+90</td>
+<td class=x2>
+8935901087036280812</td>
+<td class=x2>
+359887361636</td>
+<td class=x3 align=right>
+27.66</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+91</td>
+<td class=x2>
+8935901087041622131</td>
+<td class=x2>
+359889437843</td>
+<td class=x3 align=right>
+52.17</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+92</td>
+<td class=x2>
+8935901087041880499</td>
+<td class=x2>
+359886499988</td>
+<td class=x3 align=right>
+84.51</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+93</td>
+<td class=x2>
+8935901087042099578</td>
+<td class=x2>
+359888406998</td>
+<td class=x3 align=right>
+27.07</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+94</td>
+<td class=x2>
+8935901087042164273</td>
+<td class=x2>
+359887480364</td>
+<td class=x3 align=right>
+38.43</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+95</td>
+<td class=x2>
+8935901087042318853</td>
+<td class=x2>
+359889479007</td>
+<td class=x3 align=right>
+49.46</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+96</td>
+<td class=x2>
+8935901087042555470</td>
+<td class=x2>
+359887422552</td>
+<td class=x3 align=right>
+9.40</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+97</td>
+<td class=x2>
+8935901087042783320</td>
+<td class=x2>
+359888488398</td>
+<td class=x3 align=right>
+20.33</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+98</td>
+<td class=x2>
+8935901087042920823</td>
+<td class=x2>
+359887434322</td>
+<td class=x3 align=right>
+102.75</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+99</td>
+<td class=x2>
+8935901087043060066</td>
+<td class=x2>
+359887415786</td>
+<td class=x3 align=right>
+20.05</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+100</td>
+<td class=x2>
+8935901087043177290</td>
+<td class=x2>
+359889416638</td>
+<td class=x3 align=right>
+24.33</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+101</td>
+<td class=x2>
+8935901087043177779</td>
+<td class=x2>
+359886449904</td>
+<td class=x3 align=right>
+54.59</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+102</td>
+<td class=x2>
+8935901087043270640</td>
+<td class=x2>
+359889442931</td>
+<td class=x3 align=right>
+46.32</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+103</td>
+<td class=x2>
+8935901087044658785</td>
+<td class=x2>
+359888433270</td>
+<td class=x3 align=right>
+8.99</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+104</td>
+<td class=x2>
+8935901087045156615</td>
+<td class=x2>
+359888433464</td>
+<td class=x3 align=right>
+38.14</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+105</td>
+<td class=x2>
+8935901087045156623</td>
+<td class=x2>
+359888437474</td>
+<td class=x3 align=right>
+29.82</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+106</td>
+<td class=x2>
+8935901087045278161</td>
+<td class=x2>
+359887499968</td>
+<td class=x3 align=right>
+31.70</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+107</td>
+<td class=x2>
+8935901087051466395</td>
+<td class=x2>
+359889509986</td>
+<td class=x3 align=right>
+18.97</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+108</td>
+<td class=x2>
+8935901087052323082</td>
+<td class=x2>
+359885525802</td>
+<td class=x3 align=right>
+24.66</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+109</td>
+<td class=x2>
+8935901087052660517</td>
+<td class=x2>
+359886556634</td>
+<td class=x3 align=right>
+18.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+110</td>
+<td class=x2>
+8935901087052660541</td>
+<td class=x2>
+359886556645</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+111</td>
+<td class=x2>
+8935901087052661341</td>
+<td class=x2>
+359888559903</td>
+<td class=x3 align=right>
+10.18</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+112</td>
+<td class=x2>
+8935901087052689847</td>
+<td class=x2>
+359886535398</td>
+<td class=x3 align=right>
+56.56</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+113</td>
+<td class=x2>
+8935901087052954662</td>
+<td class=x2>
+359886599360</td>
+<td class=x3 align=right>
+27.22</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+114</td>
+<td class=x2>
+8935901087052954670</td>
+<td class=x2>
+359886599390</td>
+<td class=x3 align=right>
+39.81</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+115</td>
+<td class=x2>
+8935901087052954688</td>
+<td class=x2>
+359885551533</td>
+<td class=x3 align=right>
+18.00</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+116</td>
+<td class=x2>
+8935901087053048811</td>
+<td class=x2>
+359886588508</td>
+<td class=x3 align=right>
+42.64</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+117</td>
+<td class=x2>
+8935901087053093445</td>
+<td class=x2>
+359886519954</td>
+<td class=x3 align=right>
+23.80</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+118</td>
+<td class=x2>
+8935901087053099194</td>
+<td class=x2>
+359886501955</td>
+<td class=x3 align=right>
+39.96</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+119</td>
+<td class=x2>
+8935901087053378069</td>
+<td class=x2>
+359886588330</td>
+<td class=x3 align=right>
+19.05</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+120</td>
+<td class=x2>
+8935901087053378184</td>
+<td class=x2>
+359886550617</td>
+<td class=x3 align=right>
+31.47</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+121</td>
+<td class=x2>
+8935901087053624827</td>
+<td class=x2>
+359886509145</td>
+<td class=x3 align=right>
+19.53</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+122</td>
+<td class=x2>
+8935901087053724288</td>
+<td class=x2>
+359886550619</td>
+<td class=x3 align=right>
+53.70</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+123</td>
+<td class=x2>
+8935901087053750382</td>
+<td class=x2>
+359889589891</td>
+<td class=x3 align=right>
+29.82</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+124</td>
+<td class=x2>
+8935901087053750390</td>
+<td class=x2>
+359889533375</td>
+<td class=x3 align=right>
+11.62</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+125</td>
+<td class=x2>
+8935901087053831109</td>
+<td class=x2>
+359885555343</td>
+<td class=x3 align=right>
+28.27</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+126</td>
+<td class=x2>
+8935901087055333781</td>
+<td class=x2>
+359888559214</td>
+<td class=x3 align=right>
+47.12</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+127</td>
+<td class=x2>
+8935901087055337857</td>
+<td class=x2>
+359898521003</td>
+<td class=x3 align=right>
+26.20</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+128</td>
+<td class=x2>
+8935901087055372425</td>
+<td class=x2>
+359889586058</td>
+<td class=x3 align=right>
+55.00</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+129</td>
+<td class=x2>
+8935901087055744714</td>
+<td class=x2>
+359888555752</td>
+<td class=x3 align=right>
+138.80</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+130</td>
+<td class=x2>
+8935901087055834689</td>
+<td class=x2>
+359888507787</td>
+<td class=x3 align=right>
+9.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+131</td>
+<td class=x2>
+8935901087061143349</td>
+<td class=x2>
+359889628382</td>
+<td class=x3 align=right>
+41.52</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+132</td>
+<td class=x2>
+8935901087061400996</td>
+<td class=x2>
+359888622446</td>
+<td class=x3 align=right>
+39.50</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+133</td>
+<td class=x2>
+8935901087061551293</td>
+<td class=x2>
+359887653333</td>
+<td class=x3 align=right>
+23.13</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+134</td>
+<td class=x2>
+8935901087061878514</td>
+<td class=x2>
+359888699555</td>
+<td class=x3 align=right>
+9.35</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+135</td>
+<td class=x2>
+8935901087061907149</td>
+<td class=x2>
+359887654656</td>
+<td class=x3 align=right>
+23.18</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+136</td>
+<td class=x2>
+8935901087061953770</td>
+<td class=x2>
+359888606989</td>
+<td class=x3 align=right>
+5.50</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+137</td>
+<td class=x2>
+8935901087062523085</td>
+<td class=x2>
+359887680426</td>
+<td class=x3 align=right>
+30.75</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+138</td>
+<td class=x2>
+8935901087062742115</td>
+<td class=x2>
+359888658579</td>
+<td class=x3 align=right>
+53.53</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+139</td>
+<td class=x2>
+8935901087063111351</td>
+<td class=x2>
+359886614186</td>
+<td class=x3 align=right>
+27.15</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+140</td>
+<td class=x2>
+8935901087063301580</td>
+<td class=x2>
+359886611873</td>
+<td class=x3 align=right>
+57.77</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+141</td>
+<td class=x2>
+8935901087063301622</td>
+<td class=x2>
+359888649865</td>
+<td class=x3 align=right>
+92.57</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+142</td>
+<td class=x2>
+8935901087063480996</td>
+<td class=x2>
+359882620266</td>
+<td class=x3 align=right>
+12.88</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+143</td>
+<td class=x2>
+8935901087063572115</td>
+<td class=x2>
+359882620260</td>
+<td class=x3 align=right>
+37.83</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+144</td>
+<td class=x2>
+8935901087063630871</td>
+<td class=x2>
+359888644164</td>
+<td class=x3 align=right>
+16.75</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+145</td>
+<td class=x2>
+8935901087064019462</td>
+<td class=x2>
+359888618840</td>
+<td class=x3 align=right>
+14.23</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+146</td>
+<td class=x2>
+8935901087071270777</td>
+<td class=x2>
+359889711473</td>
+<td class=x3 align=right>
+21.18</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+147</td>
+<td class=x2>
+8935901087071377010</td>
+<td class=x2>
+359887770727</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+148</td>
+<td class=x2>
+8935901087071453266</td>
+<td class=x2>
+359888716301</td>
+<td class=x3 align=right>
+61.55</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+149</td>
+<td class=x2>
+8935901087071705087</td>
+<td class=x2>
+359889714386</td>
+<td class=x3 align=right>
+16.95</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+150</td>
+<td class=x2>
+8935901087071763367</td>
+<td class=x2>
+359887770800</td>
+<td class=x3 align=right>
+53.39</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+151</td>
+<td class=x2>
+8935901087071921577</td>
+<td class=x2>
+359886742404</td>
+<td class=x3 align=right>
+33.57</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+152</td>
+<td class=x2>
+8935901087072339316</td>
+<td class=x2>
+359887756502</td>
+<td class=x3 align=right>
+9.72</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+153</td>
+<td class=x2>
+8935901087072502806</td>
+<td class=x2>
+359888709986</td>
+<td class=x3 align=right>
+7.74</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+154</td>
+<td class=x2>
+8935901087072514058</td>
+<td class=x2>
+359889737021</td>
+<td class=x3 align=right>
+41.57</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+155</td>
+<td class=x2>
+8935901087072818251</td>
+<td class=x2>
+359889787449</td>
+<td class=x3 align=right>
+48.96</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+156</td>
+<td class=x2>
+8935901087072818269</td>
+<td class=x2>
+359889788081</td>
+<td class=x3 align=right>
+12.62</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+157</td>
+<td class=x2>
+8935901087072818608</td>
+<td class=x2>
+359887779047</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+158</td>
+<td class=x2>
+8935901087072820539</td>
+<td class=x2>
+359887775969</td>
+<td class=x3 align=right>
+35.83</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+159</td>
+<td class=x2>
+8935901087073072106</td>
+<td class=x2>
+359887728494</td>
+<td class=x3 align=right>
+10.10</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+160</td>
+<td class=x2>
+8935901087073142743</td>
+<td class=x2>
+359887707655</td>
+<td class=x3 align=right>
+18.58</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+161</td>
+<td class=x2>
+8935901087073220432</td>
+<td class=x2>
+359885711663</td>
+<td class=x3 align=right>
+42.54</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+162</td>
+<td class=x2>
+8935901087073220499</td>
+<td class=x2>
+359889733155</td>
+<td class=x3 align=right>
+54.64</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+163</td>
+<td class=x2>
+8935901087073386142</td>
+<td class=x2>
+359885702203</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+164</td>
+<td class=x2>
+8935901087073987550</td>
+<td class=x2>
+359888783808</td>
+<td class=x3 align=right>
+26.41</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+165</td>
+<td class=x2>
+8935901087074084399</td>
+<td class=x2>
+359886754425</td>
+<td class=x3 align=right>
+15.80</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+166</td>
+<td class=x2>
+8935901087074485935</td>
+<td class=x2>
+359888704483</td>
+<td class=x3 align=right>
+32.51</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+167</td>
+<td class=x2>
+8935901087074717014</td>
+<td class=x2>
+359888718787</td>
+<td class=x3 align=right>
+46.40</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+168</td>
+<td class=x2>
+8935901087081360006</td>
+<td class=x2>
+359887822751</td>
+<td class=x3 align=right>
+13.35</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+169</td>
+<td class=x2>
+8935901087081690329</td>
+<td class=x2>
+359888846747</td>
+<td class=x3 align=right>
+659.32</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+170</td>
+<td class=x2>
+8935901087082013372</td>
+<td class=x2>
+359889801524</td>
+<td class=x3 align=right>
+50.12</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+171</td>
+<td class=x2>
+8935901087082184157</td>
+<td class=x2>
+359889801165</td>
+<td class=x3 align=right>
+10.24</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+172</td>
+<td class=x2>
+8935901087082702370</td>
+<td class=x2>
+359889821998</td>
+<td class=x3 align=right>
+36.07</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+173</td>
+<td class=x2>
+8935901087082750270</td>
+<td class=x2>
+359888876706</td>
+<td class=x3 align=right>
+53.11</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+174</td>
+<td class=x2>
+8935901087082871837</td>
+<td class=x2>
+359886898966</td>
+<td class=x3 align=right>
+22.64</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+175</td>
+<td class=x2>
+8935901087083117602</td>
+<td class=x2>
+359886830962</td>
+<td class=x3 align=right>
+30.09</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+176</td>
+<td class=x2>
+8935901087083127106</td>
+<td class=x2>
+359889890400</td>
+<td class=x3 align=right>
+9.65</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+177</td>
+<td class=x2>
+8935901087083304804</td>
+<td class=x2>
+359889889090</td>
+<td class=x3 align=right>
+380.34</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+178</td>
+<td class=x2>
+8935901087083349635</td>
+<td class=x2>
+359887816845</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+179</td>
+<td class=x2>
+8935901087083758801</td>
+<td class=x2>
+359889870887</td>
+<td class=x3 align=right>
+35.61</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+180</td>
+<td class=x2>
+8935901087083758819</td>
+<td class=x2>
+359887866636</td>
+<td class=x3 align=right>
+122.72</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+181</td>
+<td class=x2>
+8935901087084549274</td>
+<td class=x2>
+359884859398</td>
+<td class=x3 align=right>
+41.25</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+182</td>
+<td class=x2>
+8935901087091249900</td>
+<td class=x2>
+359887926342</td>
+<td class=x3 align=right>
+39.87</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+183</td>
+<td class=x2>
+8935901087091857470</td>
+<td class=x2>
+359887902388</td>
+<td class=x3 align=right>
+13.71</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+184</td>
+<td class=x2>
+8935901087091951463</td>
+<td class=x2>
+359886935343</td>
+<td class=x3 align=right>
+10.34</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+185</td>
+<td class=x2>
+8935901087091971933</td>
+<td class=x2>
+359889999787</td>
+<td class=x3 align=right>
+56.06</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+186</td>
+<td class=x2>
+8935901087092137054</td>
+<td class=x2>
+359888963715</td>
+<td class=x3 align=right>
+17.06</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+187</td>
+<td class=x2>
+8935901087092383427</td>
+<td class=x2>
+359885959156</td>
+<td class=x3 align=right>
+37.91</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+188</td>
+<td class=x2>
+8935901087092406855</td>
+<td class=x2>
+359887947796</td>
+<td class=x3 align=right>
+23.78</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+189</td>
+<td class=x2>
+8935901087092523741</td>
+<td class=x2>
+359885902847</td>
+<td class=x3 align=right>
+14.27</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+190</td>
+<td class=x2>
+8935901087092523998</td>
+<td class=x2>
+359888995456</td>
+<td class=x3 align=right>
+45.79</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+191</td>
+<td class=x2>
+8935901087092572359</td>
+<td class=x2>
+359885966565</td>
+<td class=x3 align=right>
+30.18</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+192</td>
+<td class=x2>
+8935901087092691456</td>
+<td class=x2>
+359889977797</td>
+<td class=x3 align=right>
+53.64</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+193</td>
+<td class=x2>
+8935901087092966486</td>
+<td class=x2>
+359885956400</td>
+<td class=x3 align=right>
+74.36</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+194</td>
+<td class=x2>
+8935901087093867535</td>
+<td class=x2>
+359886937679</td>
+<td class=x3 align=right>
+19.56</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+195</td>
+<td class=x2>
+8935901087094203466</td>
+<td class=x2>
+359889988825</td>
+<td class=x3 align=right>
+38.95</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+196</td>
+<td class=x2>
+8935901088052269903</td>
+<td class=x2>
+359889508440</td>
+<td class=x3 align=right>
+14.04</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+197</td>
+<td class=x2>
+8935901088062664945</td>
+<td class=x2>
+359888628798</td>
+<td class=x3 align=right>
+50.15</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+198</td>
+<td class=x2>
+8935901980521512675</td>
+<td class=x2>
+359888236971</td>
+<td class=x3 align=right>
+167.68</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+199</td>
+<td class=x2>
+8935901980521788085</td>
+<td class=x2>
+359888268181</td>
+<td class=x3 align=right>
+80.12</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+200</td>
+<td class=x2>
+8935901980531571919</td>
+<td class=x2>
+359888372150</td>
+<td class=x3 align=right>
+35.61</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+201</td>
+<td class=x2>
+8935901980541110484</td>
+<td class=x2>
+359888405338</td>
+<td class=x3 align=right>
+110.34</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+202</td>
+<td class=x2>
+8935901980541111961</td>
+<td class=x2>
+359888405494</td>
+<td class=x3 align=right>
+16.70</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+203</td>
+<td class=x2>
+8935901980541139483</td>
+<td class=x2>
+359888406151</td>
+<td class=x3 align=right>
+14.67</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+204</td>
+<td class=x2>
+8935901980551346689</td>
+<td class=x2>
+359888542863</td>
+<td class=x3 align=right>
+22.55</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+205</td>
+<td class=x2>
+8935901980551542212</td>
+<td class=x2>
+359887559104</td>
+<td class=x3 align=right>
+42.26</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+206</td>
+<td class=x2>
+8935901980551604707</td>
+<td class=x2>
+359888547669</td>
+<td class=x3 align=right>
+9.70</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+207</td>
+<td class=x2>
+8935901980551605001</td>
+<td class=x2>
+359888548012</td>
+<td class=x3 align=right>
+26.86</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+208</td>
+<td class=x2>
+8935901980552147276</td>
+<td class=x2>
+359887562743</td>
+<td class=x3 align=right>
+55.98</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+209</td>
+<td class=x2>
+8935901980552186688</td>
+<td class=x2>
+359887562728</td>
+<td class=x3 align=right>
+33.66</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+210</td>
+<td class=x2>
+8935901980552187819</td>
+<td class=x2>
+359887559357</td>
+<td class=x3 align=right>
+39.52</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+211</td>
+<td class=x2>
+8935901980561367832</td>
+<td class=x2>
+359888630608</td>
+<td class=x3 align=right>
+81.97</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+212</td>
+<td class=x2>
+8935901980562309759</td>
+<td class=x2>
+359887659971</td>
+<td class=x3 align=right>
+52.99</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+213</td>
+<td class=x2>
+8935901980562439515</td>
+<td class=x2>
+359887629403</td>
+<td class=x3 align=right>
+24.79</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+214</td>
+<td class=x2>
+8935901980571573296</td>
+<td class=x2>
+359888733384</td>
+<td class=x3 align=right>
+29.45</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+215</td>
+<td class=x2>
+8935901980571601691</td>
+<td class=x2>
+359888756000</td>
+<td class=x3 align=right>
+53.68</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+216</td>
+<td class=x2>
+8935901980571728882</td>
+<td class=x2>
+359887710563</td>
+<td class=x3 align=right>
+58.50</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+217</td>
+<td class=x2>
+8935901980572204917</td>
+<td class=x2>
+359887720021</td>
+<td class=x3 align=right>
+22.14</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+218</td>
+<td class=x2>
+8935901980581164136</td>
+<td class=x2>
+359888835816</td>
+<td class=x3 align=right>
+8.90</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+219</td>
+<td class=x2>
+8935901980581196955</td>
+<td class=x2>
+359888817674</td>
+<td class=x3 align=right>
+38.15</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+220</td>
+<td class=x2>
+8935901980581520469</td>
+<td class=x2>
+359888867615</td>
+<td class=x3 align=right>
+19.24</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+221</td>
+<td class=x2>
+8935901980581520477</td>
+<td class=x2>
+359888867802</td>
+<td class=x3 align=right>
+120.16</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+222</td>
+<td class=x2>
+8935901980581569482</td>
+<td class=x2>
+359888872283</td>
+<td class=x3 align=right>
+36.78</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+223</td>
+<td class=x2>
+8935901980581979723</td>
+<td class=x2>
+359888846745</td>
+<td class=x3 align=right>
+26.24</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+224</td>
+<td class=x2>
+8935901980591110939</td>
+<td class=x2>
+359888932043</td>
+<td class=x3 align=right>
+722.17</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+225</td>
+<td class=x2>
+8935901980591268687</td>
+<td class=x2>
+359888940939</td>
+<td class=x3 align=right>
+41.00</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+226</td>
+<td class=x2>
+8935901980591520160</td>
+<td class=x2>
+359888973034</td>
+<td class=x3 align=right>
+10.67</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+227</td>
+<td class=x2>
+8935901980591574969</td>
+<td class=x2>
+359888916361</td>
+<td class=x3 align=right>
+19.05</td>
+</tr>
+<tr>
+<td class=x1 align=right>
+228</td>
+<td class=x2>
+8935901990947964442</td>
+<td class=x2>
+359888488004 </td>
+<td class=x3 align=right>
+53.64</td>
+</tr>
+</table>
+</body>
+</html>

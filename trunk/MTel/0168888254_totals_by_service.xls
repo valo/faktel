@@ -1,0 +1,296 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 9">
+<style>
+				table {mso-displayed-decimal-separator:"."; mso-displayed-thousand-separator:" ";}
+				td{mso-protection:locked visible; white-space:nowrap;}
+				.x1{mso-number-format:"0.00";}
+				</style><!--[if gte mso 9]><xml>
+						 <x:ExcelWorkbook>
+						  <x:ExcelWorksheets>
+						   <x:ExcelWorksheet>
+							<x:Name>0168888254</x:Name>
+							<x:WorksheetOptions>
+							 <x:Selected/>
+							 <x:ProtectContents>False</x:ProtectContents>
+							 <x:ProtectObjects>False</x:ProtectObjects>
+							 <x:ProtectScenarios>False</x:ProtectScenarios>
+							</x:WorksheetOptions>
+						   </x:ExcelWorksheet>
+						  </x:ExcelWorksheets>
+						  <x:WindowHeight>12660</x:WindowHeight>
+						  <x:WindowWidth>15180</x:WindowWidth>
+						  <x:WindowTopX>480</x:WindowTopX>
+						  <x:WindowTopY>135</x:WindowTopY>
+						  <x:ProtectStructure>False</x:ProtectStructure>
+						  <x:ProtectWindows>False</x:ProtectWindows>
+						 </x:ExcelWorkbook>
+						</xml><![endif]--><body>
+<table border="1">
+<tr>
+<td>Описание на услугата</td>
+<td>Такса (лв.)</td></tr>
+<tr>
+<td>100 SMS към М-Тел - 6м.-BlackBerry</td>
+<td class=x1 align=right>-0,60</td>
+</tr>
+<tr>
+<td>11888 (информация) MtelContact</td>
+<td class=x1 align=right>0,33</td>
+</tr>
+<tr>
+<td>180 мин. Бизнес разговори</td>
+<td class=x1 align=right>-108,01</td>
+</tr>
+<tr>
+<td>300 мин. отстъпка Мобилен VPN</td>
+<td class=x1 align=right>-1,00</td>
+</tr>
+<tr>
+<td>33% отстъпка международни разговори-2,3 международна зона</td>
+<td class=x1 align=right>-290,62</td>
+</tr>
+<tr>
+<td>40 мин нац. разговори (без MVPN и Бизнес разг.)</td>
+<td class=x1 align=right>-9,35</td>
+</tr>
+<tr>
+<td>40 мин. Бизнес разговори</td>
+<td class=x1 align=right>-20,36</td>
+</tr>
+<tr>
+<td>40 мин. Бизнес разговори натоварена часова зона</td>
+<td class=x1 align=right>-0,54</td>
+</tr>
+<tr>
+<td>40 мин. Бизнес разговори ненатоварена часова зона</td>
+<td class=x1 align=right>-0,18</td>
+</tr>
+<tr>
+<td>45 мин нац. разговори (без MVPN и Бизнес разг.)</td>
+<td class=x1 align=right>-1524,72</td>
+</tr>
+<tr>
+<td>45 мин нац. разговори (без MVPN и Бизнес разг.) натоварена часова зона</td>
+<td class=x1 align=right>-9,90</td>
+</tr>
+<tr>
+<td>45 мин нац. разговори (без MVPN и Бизнес разг.) ненатоварена часова зона</td>
+<td class=x1 align=right>-4,40</td>
+</tr>
+<tr>
+<td>50% отстъпка международни разговори-1 международна зона</td>
+<td class=x1 align=right>-31,81</td>
+</tr>
+<tr>
+<td>90 мин нац. разговори (без MVPN и Бизнес разг.)</td>
+<td class=x1 align=right>-541,30</td>
+</tr>
+<tr>
+<td>90 мин. Бизнес разговори</td>
+<td class=x1 align=right>-408,47</td>
+</tr>
+<tr>
+<td>Business Traveller Входящи Повиквания-Телефония</td>
+<td class=x1 align=right>113,68</td>
+</tr>
+<tr>
+<td>Business Traveller Изходящи Повиквания-Телефония</td>
+<td class=x1 align=right>330,78</td>
+</tr>
+<tr>
+<td>Business Traveller-Входящи SMS</td>
+<td class=x1 align=right>0,00</td>
+</tr>
+<tr>
+<td>Business Traveller-Изходящи SMS</td>
+<td class=x1 align=right>70,12</td>
+</tr>
+<tr>
+<td>Data Traveller Роуминг GPRS,Изходящо повикване</td>
+<td class=x1 align=right>127,95</td>
+</tr>
+<tr>
+<td>M-Tel Broadband 1500 MB</td>
+<td class=x1 align=right>41,25</td>
+</tr>
+<tr>
+<td>M-Tel Surf 25 MB</td>
+<td class=x1 align=right>24,75</td>
+</tr>
+<tr>
+<td>M-Tel Surf 250 MB M-Class 1yr.</td>
+<td class=x1 align=right>35,98</td>
+</tr>
+<tr>
+<td>M-Tel Surf START М-клас 1г</td>
+<td class=x1 align=right>37,65</td>
+</tr>
+<tr>
+<td>M-Tel Surf START М-клас 2г</td>
+<td class=x1 align=right>13,99</td>
+</tr>
+<tr>
+<td>M-Tel Surf М-клас 1г</td>
+<td class=x1 align=right>29,99</td>
+</tr>
+<tr>
+<td>MMS</td>
+<td class=x1 align=right>41,15</td>
+</tr>
+<tr>
+<td>MMS Вивател</td>
+<td class=x1 align=right>2,60</td>
+</tr>
+<tr>
+<td>MUSICALL</td>
+<td class=x1 align=right>6,00</td>
+</tr>
+<tr>
+<td>SMS допълн. услуги, специална тарифа ( SMS паркиране, игри и др.)</td>
+<td class=x1 align=right>112,05</td>
+</tr>
+<tr>
+<td>SMS към абонати на М-Тел</td>
+<td class=x1 align=right>494,98</td>
+</tr>
+<tr>
+<td>SMS към други мобилни оператори</td>
+<td class=x1 align=right>185,40</td>
+</tr>
+<tr>
+<td>SMS, допълнителни услуги, специална тарифа</td>
+<td class=x1 align=right>261,25</td>
+</tr>
+<tr>
+<td>Vodafone live!</td>
+<td class=x1 align=right>23,25</td>
+</tr>
+<tr>
+<td>Безплатни разговори (*88, *77, 131, 0800 и др.)</td>
+<td class=x1 align=right>0,00</td>
+</tr>
+<tr>
+<td>Бизнес общност, Телефония натоварена часова зона</td>
+<td class=x1 align=right>360,85</td>
+</tr>
+<tr>
+<td>Бизнес общност, Телефония ненатоварена часова зона</td>
+<td class=x1 align=right>272,25</td>
+</tr>
+<tr>
+<td>Детайлна справка</td>
+<td class=x1 align=right>0,00</td>
+</tr>
+<tr>
+<td>Допълнителни услуги, нормална тарифа</td>
+<td class=x1 align=right>3,86</td>
+</tr>
+<tr>
+<td>Допълнителни услуги, специална тарифа</td>
+<td class=x1 align=right>5,00</td>
+</tr>
+<tr>
+<td>Евроком Изходящо повикване натоварена часова зона</td>
+<td class=x1 align=right>0,40</td>
+</tr>
+<tr>
+<td>Евроком Изходящо повикване ненатоварена часова зона</td>
+<td class=x1 align=right>1,09</td>
+</tr>
+<tr>
+<td>Зареждане на "Прима"</td>
+<td class=x1 align=right>58,33</td>
+</tr>
+<tr>
+<td>Източна Телекомуникационна Компания Изх. повикване натоварена часова зона</td>
+<td class=x1 align=right>0,20</td>
+</tr>
+<tr>
+<td>Интернет (MB)</td>
+<td class=x1 align=right>181,27</td>
+</tr>
+<tr>
+<td>М-Тел - Вивател натоварена часова зона</td>
+<td class=x1 align=right>194,78</td>
+</tr>
+<tr>
+<td>М-Тел - Вивател ненатоварена часова зона</td>
+<td class=x1 align=right>145,86</td>
+</tr>
+<tr>
+<td>М-Тел - ГлоБул натоварена часова зона</td>
+<td class=x1 align=right>705,49</td>
+</tr>
+<tr>
+<td>М-Тел - ГлоБул ненатоварена часова зона</td>
+<td class=x1 align=right>713,29</td>
+</tr>
+<tr>
+<td>М-Тел - М-Тел натоварена часова зона</td>
+<td class=x1 align=right>1722,43</td>
+</tr>
+<tr>
+<td>М-Тел - М-Тел ненатоварена часова зона</td>
+<td class=x1 align=right>1544,46</td>
+</tr>
+<tr>
+<td>М-Тел - Фиксирани оператори натоварена часова зона</td>
+<td class=x1 align=right>180,42</td>
+</tr>
+<tr>
+<td>М-Тел - Фиксирани оператори ненатоварена часова зона</td>
+<td class=x1 align=right>144,17</td>
+</tr>
+<tr>
+<td>Международни разговори</td>
+<td class=x1 align=right>942,51</td>
+</tr>
+<tr>
+<td>Месечна такса</td>
+<td class=x1 align=right>10,90</td>
+</tr>
+<tr>
+<td>Месечна такса БизКласа</td>
+<td class=x1 align=right>2379,30</td>
+</tr>
+<tr>
+<td>Мобилен Интернет през 0881000 (минути)</td>
+<td class=x1 align=right>0,88</td>
+</tr>
+<tr>
+<td>Отстъпка 1000 минути Мобилен VPN</td>
+<td class=x1 align=right>-425,16</td>
+</tr>
+<tr>
+<td>Отстъпка 30 мин. от разговори М-Тел - М-Тел</td>
+<td class=x1 align=right>0,00</td>
+</tr>
+<tr>
+<td>Промоция M-Tel Surf 25 MB</td>
+<td class=x1 align=right>8,25</td>
+</tr>
+<tr>
+<td>Разговори в Мобилен VPN натоварена часова зона</td>
+<td class=x1 align=right>260,62</td>
+</tr>
+<tr>
+<td>Разговори в Мобилен VPN ненатоварена часова зона</td>
+<td class=x1 align=right>165,54</td>
+</tr>
+<tr>
+<td>Роуминг MMS</td>
+<td class=x1 align=right>0,00</td>
+</tr>
+<tr>
+<td>Такса Блекбери Про+ 70MB</td>
+<td class=x1 align=right>108,00</td>
+</tr>
+<tr>
+<td>Такса БлекбериПро Корп. Клиенти</td>
+<td class=x1 align=right>270,00</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+code.search_field {
+	position: relative;
+	top: -50px;
+	left: 75%;
+	color: black;
+}
+
+code.search_button
+
+{
+	position: relative;
+	top: -70px;
+	left: 92%;
+}
+
+div.main h3.advert-spot  {
+	margin: 0;
+	background: transparent url(../i/Bg/adv_spot.gif) no-repeat 0 0;
+}
+body.large div.main h3.advert-spot  {
+	width: 646px;
+	background: transparent url(../i/Bg/adv_spot.gif) no-repeat 0 0;
+}
+div.primary h3.advert-spot {
+	width: 230px;
+	background: transparent url(../i/Bg/adv_spot.gif) no-repeat 0 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+
+div.phone {
+	width: 465px;
+	background: transparent url(../i/Bg/div_catsummary.gif);
+	background-repeat: repeat-y;
+}	
+
+.titleset {
+	font-size: 105%;
+	color: #ff7f00;
+	font-weight: bold;
+}
+.titleset1 {
+	font-size: 105%;
+	color: #888888;
+	font-weight: bold;
+}
+	
+	
+	

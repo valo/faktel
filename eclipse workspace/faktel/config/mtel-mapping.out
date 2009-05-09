@@ -1,0 +1,7 @@
+﻿#mtel mapping 
+sim: SIM Карта
+telNumber: Телефонен номер
+description: Описание на услугата
+amount: Количество
+price: Такса (лв.)
+

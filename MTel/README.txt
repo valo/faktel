@@ -1,0 +1,1 @@
+*invoice_b* e fajlyt, koito 6te obrabotwame, w nego sa surowite danni

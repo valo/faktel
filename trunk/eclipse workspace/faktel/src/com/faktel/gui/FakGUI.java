@@ -1,6 +1,5 @@
 package com.faktel.gui;
 
-import java.awt.Container;
 import java.awt.Dimension;
 import java.io.File;
 import java.util.Map;
@@ -15,10 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
-import com.faktel.FakEngine;
 import com.faktel.config.ConfigParser;
-import com.faktel.features.PieChartView;
-import com.faktel.features.SimpleGrid;
 import com.faktel.mvc.Grid;
 import com.faktel.mvc.GridRow;
 import com.faktel.mvc.View;

@@ -6,6 +6,12 @@ import java.util.List;
 
 import javax.swing.AbstractListModel;
 
+/**
+ * A model for the list of the files in the faktel GUI. Just stores a list of 
+ * files and support clearing the list.
+ * 
+ * @author valentinmihov
+ */
 public class FileListModel extends AbstractListModel {
 	private static final long serialVersionUID = 5506141799840614303L;
 	
@@ -27,5 +33,11 @@ public class FileListModel extends AbstractListModel {
 		m_files.add(file);
 		fireContentsChanged(this, m_files.size() - 1, m_files.size() - 1);
 		return true;
+	}
+
+	public void clearList() {
+		int oldSize = m_files.size();
+		m_files.clear();
+		fireContentsChanged(this, 0, oldSize - 1);
 	}
 }

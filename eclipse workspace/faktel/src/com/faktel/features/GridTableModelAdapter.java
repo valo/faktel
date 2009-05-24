@@ -20,13 +20,22 @@ public class GridTableModelAdapter extends AbstractTableModel {
 		
 		return m_grid.get(0).get().size(); 
 	}
+	
+	@Override
+	public String getColumnName(int column) {
+		if (m_grid.size() == 0) {
+			return "";
+		}
+		
+		return m_grid.get(0).get().get(column).toString();
+	}
 
 	public int getRowCount() {
-		return m_grid.size();
+		return m_grid.size() - 1;
 	}
 
 	public Object getValueAt(int rowIndex, int columnIndex) {
-		return m_grid.get(rowIndex).get().get(columnIndex);
+		return m_grid.get(rowIndex + 1).get().get(columnIndex);
 	}
 
 }

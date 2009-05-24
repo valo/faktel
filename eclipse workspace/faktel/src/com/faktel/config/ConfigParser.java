@@ -7,8 +7,11 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Stack;
 import java.util.logging.Logger;
 
+import javax.swing.Box;
+import javax.swing.JComponent;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
@@ -22,6 +25,7 @@ import com.faktel.io.InputReader;
 import com.faktel.io.InputReaderFactory;
 import com.faktel.io.OutputWriter;
 import com.faktel.io.OutputWriterFactory;
+import com.faktel.mvc.View;
 
 /**
  * Configuration parser.
@@ -37,6 +41,9 @@ public class ConfigParser {
 	@Deprecated
 	private List<FilterInfo> m_flowFilters = new LinkedList<FilterInfo>();
 	private Collection<OutputWriter> m_writers = new LinkedList<OutputWriter>();
+	
+	private Box m_layout;
+	private Map<String, View> m_viewMapping;
 
 	/**
 	 * Create configuration parser by configuration file
@@ -73,6 +80,14 @@ public class ConfigParser {
 	public Collection<OutputWriter> getOutputWriters() {
 		return m_writers;
 	}
+	
+	public JComponent getLayout() {
+		return m_layout;
+	}
+	
+	public Map<String, View> getViewMapping() {
+		return m_viewMapping;
+	}
 
 	/**
 	 * XML configuration parser implementation.
@@ -98,12 +113,16 @@ public class ConfigParser {
 		// flow
 		private static final String FLOW = "flow";
 		private static final String PROVIDER_NAME = "name";
+		
+		// layout
+		private static final String LAYOUT = "layout";
 
 		private Map<String, InputReader> m_genricInputs = new LinkedHashMap<String, InputReader>();
 		private Map<String, FilterInfo> m_declaredFilters = new LinkedHashMap<String, FilterInfo>();
 		private Map<String, OutputWriter> m_genericWriters = new LinkedHashMap<String, OutputWriter>();
 
 		private boolean m_inFlowSection;
+		private Stack<DefaultHandler> m_handlerStack = new Stack<DefaultHandler>();
 		private StringBuilder m_builder = new StringBuilder();
 		// filter args
 		private String m_name;
@@ -116,6 +135,16 @@ public class ConfigParser {
 		 */
 		public void startElement(String uri, String localName, String name,
 				Attributes attributes) throws SAXException {
+			if (m_handlerStack.size() > 0) {
+				m_handlerStack.peek().startElement(uri, localName, name, attributes);
+				return;
+			}
+			
+			if (name.equalsIgnoreCase(LAYOUT)) {
+				m_handlerStack.push(new LayoutParser(this));
+				return;
+			}
+			
 			if (!m_inFlowSection) {
 				if (name.equalsIgnoreCase(INPUT)) {
 					String providerName = attributes.getValue(PROVIDER_NAME);
@@ -183,6 +212,14 @@ public class ConfigParser {
 		 */
 		public void endElement(String uri, String localName, String name)
 				throws SAXException {
+			if (name.equalsIgnoreCase(LAYOUT)) {
+				m_layout = ((LayoutParser)m_handlerStack.peek()).getLayout();
+				m_viewMapping = ((LayoutParser)m_handlerStack.peek()).getViewMapping();
+				m_handlerStack.pop();
+				
+				return;
+			}
+			
 			if (!m_inFlowSection) {
 				if (name.equalsIgnoreCase(FILTER)) {
 					//create FilterInfo

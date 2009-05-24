@@ -1,13 +1,14 @@
 package com.faktel.mvc;
 
-import java.awt.Container;
 import java.util.Observable;
+
+import javax.swing.JComponent;
 
 /*
  * An abstract class, which defines a container displaying the result from a computation
  * to the user 
  */
-public abstract class View extends Container implements java.util.Observer {
+public abstract class View extends JComponent implements java.util.Observer {
 
 	private static final long serialVersionUID = -7257998569769294379L;
 	

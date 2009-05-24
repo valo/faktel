@@ -8,7 +8,8 @@
 			<filter name="DummyFilter2" class="com.faktel.features.DummyFilter">
 				<arg name="argument21" value="value21" />
 				<arg name="argument21" value="value22" />
-			</filter><filter name="DummyFilter1" class="com.faktel.features.DummyFilter">
+			</filter>
+			<filter name="DummyFilter1" class="com.faktel.features.DummyFilter">
 				<arg name="argument1" value="value1" />
 				<arg name="argument1" value="value2" />
 			</filter>
@@ -23,7 +24,12 @@
 		</outputs>
 	</definitions>
 	
-	
+	<layout>
+	  <hbox>
+	    <view class="com.faktel.features.SimpleGrid" name="table" width="300" height="200" />
+	    <view class="com.faktel.features.PieChartView" name="pie" width="200" height="200" />
+	  </hbox>
+	</layout>
 	
 	<!-- IMPORTANT FLOW. -->
 	<flow>

@@ -1,13 +1,10 @@
 package com.faktel.features;
 
-import java.util.Observable;
-
 import com.faktel.mvc.Grid;
-import com.faktel.mvc.Model;
 import com.faktel.mvc.View;
-import com.faktel.mvc.commands.Command;
 
 public class DummyView extends View {
+	private static final long serialVersionUID = 569797224106190757L;
 
 	public DummyView(String name) {
 		super(name);

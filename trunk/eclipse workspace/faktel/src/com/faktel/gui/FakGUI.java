@@ -2,34 +2,42 @@ package com.faktel.gui;
 
 import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
+import java.util.Map;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
-import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JList;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
+import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
-import javax.swing.filechooser.FileFilter;
+import javax.swing.JTextField;
 
+import com.faktel.FakEngine;
+import com.faktel.config.ConfigParser;
+import com.faktel.features.PieChartView;
 import com.faktel.features.SimpleGrid;
 import com.faktel.mvc.Grid;
 import com.faktel.mvc.GridRow;
+import com.faktel.mvc.View;
 
+/**
+ * GUI of the faktel framework
+ * 
+ * @author valentinmihov
+ */
 public class FakGUI extends JFrame {
 	private static final long serialVersionUID = -3360812071998304818L;
 	
-	private MainMenu m_mainMenu;
-	private JList    m_fileList;
-	private Box		 m_mainContainer;
+	private MainMenu   m_mainMenu;
+	private JList      m_fileList;
+	private File       m_settingsFile;
+	private Box		   m_mainContainer;
+	private JTextField m_settingsFileField;
+
+	private Map<String, View> m_viewMapping;
 	
 	private static FakGUI s_application;
 	
@@ -44,41 +52,44 @@ public class FakGUI extends JFrame {
 		add(m_mainContainer);
 		m_mainContainer.setVisible(true);
 		
-		// This is going to be the first row
 		{
-			Container firstRow = new JPanel();
-			firstRow.setVisible(true);
-			m_mainContainer.add(firstRow);
+			Box row = new Box(BoxLayout.X_AXIS);
+			row.setBorder(BorderFactory.createTitledBorder("Settings file:"));
+			m_mainContainer.add(row);
+			
+			m_settingsFileField = new JTextField();
+			m_settingsFileField.setEnabled(false);
+			row.add(m_settingsFileField);
+			
+			JButton chooseSettings = new JButton("Open settings");
+			chooseSettings.addActionListener(m_mainMenu.getFileOpenSettingsAction());
+			row.add(chooseSettings);
+		}
+		
+		{
+			Box row = new Box(BoxLayout.X_AXIS);
+			row.setBorder(BorderFactory.createTitledBorder("Files list:"));
+			m_mainContainer.add(row);
 			
 			m_fileList = new JList(new FileListModel());
-			m_fileList.setPreferredSize(new Dimension(400, 200));
-			m_fileList.setVisible(true);
 			JScrollPane scrollPane = new JScrollPane(m_fileList, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-			scrollPane.setPreferredSize(new Dimension(400, 250));
-			scrollPane.setBorder(BorderFactory.createTitledBorder("Files list:"));
-			firstRow.add(scrollPane);
+			scrollPane.setSize(new Dimension(400, 250));
+			row.add(scrollPane);
+			
+			Box buttonsArea = new Box(BoxLayout.Y_AXIS);
+			row.add(buttonsArea);
 			
 			JButton addFilesButton = new JButton("Add invoices");
 			addFilesButton.addActionListener(m_mainMenu.getFileOpenAction());
-			firstRow.add(addFilesButton);
-		}
+			buttonsArea.add(addFilesButton);
 
-		{
-			Container secondRow = new Box(BoxLayout.X_AXIS);
-			secondRow.setVisible(true);
-			m_mainContainer.add(secondRow);
-			
-			SimpleGrid gridView = new SimpleGrid("test");
-			secondRow.add(gridView);
-			
-			Grid grid = new Grid();
-			Object[] tmp1 = {"1", "2", "3", "4"};
-			grid.add(new GridRow(tmp1));
-			
-			Object[] tmp2 = {"5", "6", "7", "8"};
-			grid.add(new GridRow(tmp2));
-			
-			gridView.displayGrid(grid);
+			JButton clearFilesButton = new JButton("Clear list");
+			clearFilesButton.addActionListener(m_mainMenu.getFileClearAction());
+			buttonsArea.add(clearFilesButton);
+
+			JButton processButton = new JButton("Process");
+			processButton.addActionListener(m_mainMenu.getProcessAction());
+			buttonsArea.add(processButton);
 		}
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -86,36 +97,94 @@ public class FakGUI extends JFrame {
 		setVisible(true);
 	}
 	
+	/**
+	 * Adds a file to the list of files for processing
+	 * 
+	 * @param f The file to the added to the list
+	 */
 	public void addFile(File f) {
 		((FileListModel)m_fileList.getModel()).addFile(f);
+	}
+
+	/**
+	 * Sets the settings file, which contains the XML with all the configuration
+	 * 
+	 * @param settingsFile The settings file
+	 */
+	public void setSettingsFile(File settingsFile) {
+		m_settingsFileField.setText(settingsFile.getName());
+		m_settingsFile = settingsFile;
+	}
+	
+	/**
+	 * Returns a view with a given name.
+	 * 
+	 * @param name The name of the view
+	 * @return The requested view or null if such does not exist
+	 */
+	public View getView(String name) {
+		return m_viewMapping.get(name);
+	}
+
+	/**
+	 * Reads the configuration and the input invoices and starts the filters
+	 */
+	public void process() {
+		File configFile = m_settingsFile;
+		
+		if (configFile == null) {
+			JOptionPane.showMessageDialog(this, "Please select a settings file");
+			return;
+		}
+		
+		if (!configFile.isFile() || !configFile.exists()) {
+			JOptionPane.showMessageDialog(this, "The settings file you specified does not exist or is not a regular file. Please select a valid settings file.");
+			return;
+		}
+		
+		if (m_fileList.getModel().getSize() == 0) {
+			JOptionPane.showMessageDialog(this, "Please select some files for processing.");
+			return;
+		}
+
+		ConfigParser parser;
+		try {
+			parser = new ConfigParser(configFile);
+			m_mainContainer.add(parser.getLayout());
+			m_viewMapping = parser.getViewMapping();
+			
+			setSize(getPreferredSize());
+			
+			// FIXME: debug
+			Grid grid = new Grid();
+			grid.add(new GridRow(new Object[] {"Apples", "Oranges", "Mangos", "Grapes"}));
+			grid.add(new GridRow(new Object[] { 10, 8, 13, 22 }));
+			grid.add(new GridRow(new Object[] { 3, 17, 22, 56 }));
+			getView("table").displayGrid(grid);
+			getView("pie").displayGrid(grid);
+			// FIXME: uncomment after the filters are implemented
+//			FakEngine engine = new FakEngine(parser);
+//			engine.process();
+		} 
+		catch (Exception e) {
+			// FIXME: probably this is a good point to send a report for the crashes
+			e.printStackTrace();
+			JOptionPane.showMessageDialog(this, 
+										  "Error occured while processing the files.\nError: " + e.getMessage(), 
+										  "Error", 
+										  JOptionPane.ERROR_MESSAGE);
+		}
 	}
 	
 	public static FakGUI getApplication() { return s_application; }
 
 	public static void main(String[] args) throws Exception {
 		s_application = new FakGUI();
-/*		boolean debug = true;
-		if (debug && args.length == 0) {
-			args = new String[] { "config/settings.xml" };
-		}
+		s_application.setTitle("FakTel");
+		s_application.setName("FakTel");
+	}
 
-		if (args.length == 0) {
-			System.err.println("Config file is not specified. Exitting..");
-			System.exit(1);
-		}
-		File configFile = new File(args[0]);
-		if (!configFile.isFile() || !configFile.exists()) {
-			System.err.println("Config file '" + configFile
-					+ "' does not exists");
-			System.exit(2);
-		}
-
-		ConfigParser parser = new ConfigParser(configFile);
-		FakEngine engine = new FakEngine(parser);
-		engine.process();
-		System.out.println("Bye!");
-		// Fix dummy bug
-		// http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6476706
-		System.exit(0);*/
+	public void clearFileList() {
+		((FileListModel)m_fileList.getModel()).clearList();
 	}
 }

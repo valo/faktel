@@ -43,7 +43,7 @@ public class FakEngine {
 				.getOutputWriters());
 	}
 
-	private void process() {
+	public void process() {
 		InvoiceRows rowData = null;
 		try {
 			rowData = m_reader.readAllRowData();
@@ -65,7 +65,7 @@ public class FakEngine {
 		
 
 		Model model = new Model(rowData);
-		View view = new DummyView(model);
+		View view = new DummyView("dummy");
 		// The working dir for this applicatio run.
 		File runDir = Utils.createFolderForCurrentRun();
 

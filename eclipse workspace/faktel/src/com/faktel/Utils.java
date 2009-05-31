@@ -11,7 +11,6 @@ import java.lang.reflect.Field;
 import java.net.URLEncoder;
 import java.util.Calendar;
 import java.util.Collection;
-import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.LinkedList;
 import java.util.logging.Logger;
@@ -168,9 +167,8 @@ public class Utils {
 		return System.getProperty("user.dir");
 	}
 
-	@SuppressWarnings("deprecation")
 	public static final String getCurrentDateAsFileName() {
-		Calendar calendar = new GregorianCalendar().getInstance();
+		Calendar calendar = GregorianCalendar.getInstance();
 		int year = calendar.get(Calendar.YEAR);
 		int month = calendar.get(Calendar.MONTH);
 		int day = calendar.get(Calendar.DAY_OF_WEEK);

@@ -29,7 +29,7 @@ public class InvoiceRowReader {
 	/** Drain all row data taken from input reader. 
 	 * 
 	 * @return Drained row data
-	 * @throws IOException if I/O errors occurs
+	 * @throws IOException if I/O error occurs
 	 */
 	public InvoiceRows readAllRowData() throws IOException {
 		InvoiceRowFactory factory = null;
@@ -37,7 +37,6 @@ public class InvoiceRowReader {
 		Collection<String[]> lines = m_reader.readRowData();
 		InvoiceRows rows = new InvoiceRows();
 		if (lines.size() > 1) {
-			int idx =0;
 			for (String[] row : lines) {
 				//first row are headers
 				if (factory == null) {
@@ -47,7 +46,7 @@ public class InvoiceRowReader {
 				}
 				else {
 					InvoiceRow ir =factory.createRowData(row); 
-					rows.put(idx++, ir);	
+					rows.add(ir);	
 				}	
 			}
 		}

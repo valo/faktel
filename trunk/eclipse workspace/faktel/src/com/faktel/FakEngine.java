@@ -57,12 +57,8 @@ public class FakEngine {
 					+ m_reader.getStorageSource());
 			rowData = new InvoiceRows();
 		}
-		//dumb ass programming ;)
+		// dumb ass programming ;)
 		String resultsFile = "";
-
-		
-		
-		
 
 		Model model = new Model(rowData);
 		View view = new DummyView("dummy");
@@ -84,8 +80,9 @@ public class FakEngine {
 						"process(Method, thrown)", e);
 			}
 
-			File filterDir = Utils.createFolderForFilter(filter.getClass()
-					.getName(), runDir);
+			File filterDir = Utils.createFolderForFilter(String.format("%03d-",
+					filterNo)
+					+ filter.getClass().getName(), runDir);
 			FilterArgs args = fi.getArguments();
 			try { // start processing
 				logger.info("Preparing filter");
@@ -108,7 +105,8 @@ public class FakEngine {
 					// ".csv");
 					String sheetName = "Filter" + filterNo;
 					resultsFile = outputDir + "results.xls";
-					Utils.outputFilterResultToXls(resultData, resultsFile, sheetName);
+					Utils.outputFilterResultToXls(resultData, resultsFile,
+							sheetName);
 				}
 				logger.info("Cleanup after filter");
 				filter.cleanup(model, filterDir, runDir);
@@ -116,10 +114,9 @@ public class FakEngine {
 			} catch (Throwable t) {
 				t.printStackTrace();
 			}
-		}//for filter
-		
+		}// for filter
+
 		Utils.shellExecute("explorer " + resultsFile);
-		
 
 	}
 

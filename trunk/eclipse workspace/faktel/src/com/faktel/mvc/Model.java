@@ -32,6 +32,9 @@ public class Model extends java.util.Observable {
 		return dataPool;
 	}
 
+	/**
+	 * @return copy of original invoice rows.
+	 */
 	public InvoiceRows getRows() {
 		return (InvoiceRows) rows.clone();
 	}

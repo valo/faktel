@@ -1,6 +1,9 @@
 package com.faktel;
 
-import java.util.TreeMap;
+import java.util.ArrayList;
+
+import com.faktel.mvc.Grid;
+import com.faktel.mvc.GridRow;
 
 /**
  * @author rumen
@@ -8,8 +11,18 @@ import java.util.TreeMap;
  * Filled in by parsers.
  */
 //TODO should be immutable through all the filters 
-public class InvoiceRows extends TreeMap<Integer, InvoiceRow> {
+public class InvoiceRows extends ArrayList<InvoiceRow> {
 
 	private static final long serialVersionUID = -2697988747425263997L;
+	
+	public Grid toGrid(){
+		Grid res = new Grid();
+		for ( InvoiceRow row: this){
+			GridRow gridRow = row.toGridRow();
+			res.add(gridRow);
+		}
+		return res;
+	}
+	
 
 }

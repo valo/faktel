@@ -9,8 +9,10 @@ import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.net.URLEncoder;
+import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.LinkedList;
 import java.util.logging.Logger;
 
@@ -168,10 +170,16 @@ public class Utils {
 
 	@SuppressWarnings("deprecation")
 	public static final String getCurrentDateAsFileName() {
-		Date date = new Date(System.currentTimeMillis());
-		String res = String.format("%04d-%02d-%02d_%02d-%02d-%02d", date
-				.getYear() + 1900, date.getMonth(), date.getDay(), date
-				.getHours(), date.getMinutes(), date.getSeconds());
+		Calendar calendar = new GregorianCalendar().getInstance();
+		int year = calendar.get(Calendar.YEAR);
+		int month = calendar.get(Calendar.MONTH);
+		int day = calendar.get(Calendar.DAY_OF_WEEK);
+		int hours = calendar.get(Calendar.HOUR_OF_DAY);
+		int minutes = calendar.get(Calendar.MINUTE);
+		int seconds = calendar.get(Calendar.SECOND);
+		
+		String res = String.format("%04d-%02d-%02d_%02d-%02d-%02d", year,
+				month, day, hours, minutes, seconds);
 		return res;
 	}
 
@@ -335,16 +343,15 @@ public class Utils {
 		Process ps;
 		try {
 			ps = rt.exec(cmd);
-			/*OutputStream os = ps.getOutputStream();
-			InputStream is = ps.getInputStream();
-			DataOutputStream dos = new DataOutputStream(os);
-			dos.writeBytes("i");
-			dos.writeBytes("test");
-			dos.writeBytes("u001B");
-			dos.writeBytes(":wq");
-			dos.flush();*/
+			/*
+			 * OutputStream os = ps.getOutputStream(); InputStream is =
+			 * ps.getInputStream(); DataOutputStream dos = new
+			 * DataOutputStream(os); dos.writeBytes("i");
+			 * dos.writeBytes("test"); dos.writeBytes("u001B");
+			 * dos.writeBytes(":wq"); dos.flush();
+			 */
 			ps.waitFor();
-			//dos.close();
+			// dos.close();
 			System.out.println(ps.exitValue());
 		} catch (IOException e) {
 			e.printStackTrace();

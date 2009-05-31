@@ -17,7 +17,7 @@ public class GridRow {
 	public GridRow() {
 		super();
 	}
-	
+
 	public GridRow(Object[] objects) {
 		super();
 		set(objects);
@@ -60,7 +60,7 @@ public class GridRow {
 		String[] res = new String[len];
 		for (int i = 0; i < len; i++) {
 			Object o = row.get(i);
-			res[i] = o.toString();
+			res[i] = (null == o) ? "" + o : o.toString();
 		}
 		return res;
 	}

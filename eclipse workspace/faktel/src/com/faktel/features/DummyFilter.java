@@ -1,8 +1,6 @@
 package com.faktel.features;
 
 import java.io.File;
-import java.util.Set;
-import java.util.Map.Entry;
 
 import com.faktel.InvoiceRow;
 import com.faktel.Utils;
@@ -22,7 +20,7 @@ public class DummyFilter implements RowFilter {
 		System.out.println("Arguments supplied: " + args);
 	}
 
-	public Grid execute(Model model, File workingDir, File currentDir) {
+	public Grid execute(Model model, File workingDir, File allFiltersDir) {
 
 		if (!model.getDataPool().exists(MYFIELD)) {
 			java.util.Date date = new java.util.Date(System.currentTimeMillis());
@@ -38,18 +36,24 @@ public class DummyFilter implements RowFilter {
 			model.gridAppend(row);
 		}
 
-		Set<Entry<Integer, InvoiceRow>> set = model.getRows().entrySet();
 		int maxRowsToCareAbout = 3;
-		for (Entry<Integer, InvoiceRow> rowentry : set) {
+		for (InvoiceRow invRow : model.getRows()) {
 			GridRow gridRow = new GridRow();
-			InvoiceRow invRow = rowentry.getValue();
 			gridRow.set(invRow.toArrayList());
 			model.gridAppend(gridRow);
 			if (0 == --maxRowsToCareAbout) {
 				break;
 			}
 		}
-		return model.gridGetCopy();
+	
+		//result from DummyFilter
+		Grid res = model.gridGetCopy();
+		
+		//append result from other filter too :)
+		res.addAll(
+				new BreakInvoiceIntoSingleNumberInvoices().execute(model,
+						workingDir, allFiltersDir));
+		return res; 
 	}
 
 	public boolean cleanup(Model model, File workingDir, File commonDir) {

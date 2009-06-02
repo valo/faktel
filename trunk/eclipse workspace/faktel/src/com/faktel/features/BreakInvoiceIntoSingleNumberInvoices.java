@@ -19,12 +19,10 @@ public class BreakInvoiceIntoSingleNumberInvoices implements RowFilter {
 			.getName()
 			+ ".smallInvoices HashMap<String, InvoiceRows>";
 
-	@Override
 	public boolean cleanup(Model model, File workingDir, File commonDir) {
 		return true;
 	}
 
-	@Override
 	public Grid execute(Model model, File workingDir, File allFiltersDir) {
 		InvoiceRows invoice = model.getRows();
 		HashMap<String, InvoiceRows> allNumbers = new HashMap<String, InvoiceRows>();
@@ -76,7 +74,6 @@ public class BreakInvoiceIntoSingleNumberInvoices implements RowFilter {
 		return res;
 	}
 
-	@Override
 	public boolean prepare(FilterArgs args) {
 		return true;
 	}

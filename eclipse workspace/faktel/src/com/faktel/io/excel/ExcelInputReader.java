@@ -20,7 +20,6 @@ import com.faktel.io.InputReader;
 
 /** Reader implementation over xls files. 
  * 
- * @author <a href="mailto:ivailo.radev@gmail.com">Ivaylo Radev</a>
  * @version 1.0
  */
 public class ExcelInputReader extends DefaultFileMapping implements InputReader {

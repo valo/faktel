@@ -9,6 +9,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
@@ -76,6 +77,23 @@ public class MainMenu extends JMenuBar {
 		}
 	};
 
+	private ActionListener m_editSettingsAction = new ActionListener() {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			File settingsFile = FakGUI.getApplication().getSettingsFile();
+			if (settingsFile != null && settingsFile.exists()) {
+				ConfigFileEditor configFileEditor = new ConfigFileEditor(FakGUI
+						.getApplication(), settingsFile);
+				configFileEditor.setVisible(true);
+			} else {
+				JOptionPane.showMessageDialog(FakGUI.getApplication(),
+						"Please first select a configuration file.");
+			}
+		}
+		
+	};
+
 	/**
 	 * A command for adding a file to the list of invoices to be processed
 	 */
@@ -108,7 +126,7 @@ public class MainMenu extends JMenuBar {
 			FakGUI.getApplication().clearFileList();
 		}
 	};
-	
+		
 	/**
 	 * A command for displaying the About box 
 	 */
@@ -134,5 +152,9 @@ public class MainMenu extends JMenuBar {
 
 	public ActionListener getFileClearAction() {
 		return m_clearFileListAction;
+	}
+
+	public ActionListener getFileEditSettingsAction() {
+		return m_editSettingsAction;
 	}
 }

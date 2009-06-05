@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
+import com.faktel.FakEngine;
 import com.faktel.config.ConfigParser;
 import com.faktel.mvc.Grid;
 import com.faktel.mvc.GridRow;
@@ -22,7 +23,7 @@ import com.faktel.mvc.View;
 /**
  * GUI of the Faktel project
  * 
- * @author teodor.stoev
+ * @author teodor.stoev, mitex
  */
 public class FakGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
@@ -161,9 +162,8 @@ public class FakGUI extends JFrame {
 			grid.add(new GridRow(new Object[] { 3, 17, 22, 56 }));
 			getView("table").displayGrid(grid);
 			getView("pie").displayGrid(grid);
-			// FIXME: uncomment after the filters are implemented
-//			FakEngine engine = new FakEngine(parser);
-//			engine.process();
+			FakEngine engine = new FakEngine(parser);
+			engine.process();
 		} 
 		catch (Exception e) {
 			// FIXME: probably this is a good point to send a report for the crashes

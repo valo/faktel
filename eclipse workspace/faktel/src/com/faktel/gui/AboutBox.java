@@ -1,4 +1,4 @@
-package com.faktel.gui;
+п»їpackage com.faktel.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 /**
  * About box of the faktel project
  * 
- * @author teodor.stoev
+ * @author teodor.stoev, mitex
  */
 public class AboutBox extends JDialog {
 	private static final long serialVersionUID = 1L;
@@ -35,7 +35,7 @@ public class AboutBox extends JDialog {
 		
 		JLabel projectVersion = new JLabel("Version 0.8 alpha");
 		
-		JLabel projectAuthors = new JLabel("Created by Румен Бъров, Теодор Стоев, Димитър Г. Димитров, Светла Николова, Димитър Димитров  ");
+		JLabel projectAuthors = new JLabel("Created by Rumen Burov, Teodor Stoev, Dimitar G. Dimitrov, Svetla Nikolova, Dimitar N. Dimitrov  ");
 		
 		JButton closeButton = new JButton("OK");
 		closeButton.addActionListener(new CloseButtonListener());

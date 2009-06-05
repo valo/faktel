@@ -47,6 +47,7 @@ public class ConfigFileEditor extends JDialog {
 		textArea.setLineWrap(true);
 		textArea.setWrapStyleWord(true);
 		textArea.setText(readFile());
+		textArea.setTabSize(2);
 		textArea.setCaretPosition(0);
 		
 		JScrollPane scrollPane = new JScrollPane(textArea);

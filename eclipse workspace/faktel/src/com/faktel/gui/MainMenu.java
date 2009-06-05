@@ -67,7 +67,6 @@ public class MainMenu extends JMenuBar {
 			JFileChooser chooser = new JFileChooser();
 			chooser.setCurrentDirectory(new File(Preferences.systemNodeForPackage(FakGUI.class).get(LAST_SETTINGS_FOLDER, ".")));
 			chooser.setFileFilter(new FileNameExtensionFilter("XML Document", "xml"));
-			//chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 			int result = chooser.showOpenDialog(FakGUI.getApplication());
 			
 			if (result == JFileChooser.APPROVE_OPTION) {
@@ -84,7 +83,7 @@ public class MainMenu extends JMenuBar {
 		public void actionPerformed(ActionEvent e) {
 			JFileChooser chooser = new JFileChooser();
 			chooser.setCurrentDirectory(new File(Preferences.systemNodeForPackage(FakGUI.class).get(LAST_INVOICES_FOLDER, ".")));
-			chooser.setFileFilter(new FileNameExtensionFilter("Excel and CSV files", ".xls", ".csv"));
+			chooser.setFileFilter(new FileNameExtensionFilter("Excel and CSV files", "xls", "csv"));
 			chooser.setMultiSelectionEnabled(true);
 			//chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 			int result = chooser.showOpenDialog(FakGUI.getApplication());

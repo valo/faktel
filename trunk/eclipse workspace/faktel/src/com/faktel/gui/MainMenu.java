@@ -100,7 +100,7 @@ public class MainMenu extends JMenuBar {
 				}
 			});
 			chooser.setMultiSelectionEnabled(true);
-			chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+			chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 			int result = chooser.showOpenDialog(FakGUI.getApplication());
 			
 			if (result == JFileChooser.APPROVE_OPTION) {

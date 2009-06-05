@@ -62,6 +62,11 @@ public class FakGUI extends JFrame {
 			JButton chooseSettings = new JButton("Open settings");
 			chooseSettings.addActionListener(m_mainMenu.getFileOpenSettingsAction());
 			row.add(chooseSettings);
+
+			JButton editSettings = new JButton("Edit settings");
+			editSettings.addActionListener(m_mainMenu.getFileEditSettingsAction());
+			row.add(editSettings);
+
 		}
 		
 		/* Manage file list */
@@ -185,5 +190,9 @@ public class FakGUI extends JFrame {
 
 	public void clearFileList() {
 		((FileListModel)m_fileList.getModel()).clearList();
+	}
+
+	public File getSettingsFile() {
+		return m_settingsFile;
 	}
 }

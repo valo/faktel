@@ -9,13 +9,13 @@ import javax.swing.JFileChooser;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.filechooser.FileFilter;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  * The main menu of the faktel GUI. Also includes some common commands in the
  * GUI.
  * 
- * @author teodor.stoev
+ * @author teodor.stoev, mitex
  */
 public class MainMenu extends JMenuBar {
 	private static final long serialVersionUID = 7694698099129747446L;
@@ -27,27 +27,33 @@ public class MainMenu extends JMenuBar {
 	public MainMenu() {
 		// File menu
 		JMenu fileMenu = new JMenu("File");
+		fileMenu.setMnemonic('F');
 		{
 			JMenuItem openSettings = new JMenuItem("Open settings...");
 			openSettings.addActionListener(m_openSettingsAction);
+			openSettings.setMnemonic('O');
 			fileMenu.add(openSettings);
 
 			JMenuItem open = new JMenuItem("Add invoices...");
+			open.setMnemonic('A');
 			open.addActionListener(m_openAction);
 			fileMenu.add(open);
 			
 			fileMenu.insertSeparator(2);
 			
 			JMenuItem process = new JMenuItem("Process");
+			process.setMnemonic('P');
 			process.addActionListener(m_processAction);
 			fileMenu.add(process);
 		}
 		add(fileMenu);
 		
 		JMenuItem helpMenu = new JMenu("Help");
+		helpMenu.setMnemonic('H');
 		add(helpMenu);
 		{
 			JMenuItem aboutFaktel = new JMenuItem("About...");
+			aboutFaktel.setMnemonic('A');
 			aboutFaktel.addActionListener(m_openAboutBoxAction);
 			helpMenu.add(aboutFaktel);
 		}
@@ -60,18 +66,8 @@ public class MainMenu extends JMenuBar {
 		public void actionPerformed(ActionEvent e) {
 			JFileChooser chooser = new JFileChooser();
 			chooser.setCurrentDirectory(new File(Preferences.systemNodeForPackage(FakGUI.class).get(LAST_SETTINGS_FOLDER, ".")));
-			chooser.setFileFilter(new FileFilter() {
-				@Override
-				public boolean accept(File f) {
-					return f.getName().endsWith(".xml");
-				}
-
-				@Override
-				public String getDescription() {
-					return "XML Document";
-				}
-			});
-			chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+			chooser.setFileFilter(new FileNameExtensionFilter("XML Document", "xml"));
+			//chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 			int result = chooser.showOpenDialog(FakGUI.getApplication());
 			
 			if (result == JFileChooser.APPROVE_OPTION) {
@@ -88,19 +84,9 @@ public class MainMenu extends JMenuBar {
 		public void actionPerformed(ActionEvent e) {
 			JFileChooser chooser = new JFileChooser();
 			chooser.setCurrentDirectory(new File(Preferences.systemNodeForPackage(FakGUI.class).get(LAST_INVOICES_FOLDER, ".")));
-			chooser.setFileFilter(new FileFilter() {
-				@Override
-				public boolean accept(File f) {
-					return f.getName().endsWith(".xls") || f.getName().endsWith(".csv");
-				}
-
-				@Override
-				public String getDescription() {
-					return "Excel and CSV files";
-				}
-			});
+			chooser.setFileFilter(new FileNameExtensionFilter("Excel and CSV files", ".xls", ".csv"));
 			chooser.setMultiSelectionEnabled(true);
-			chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+			//chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 			int result = chooser.showOpenDialog(FakGUI.getApplication());
 			
 			if (result == JFileChooser.APPROVE_OPTION) {

@@ -20,12 +20,12 @@ import com.faktel.mvc.GridRow;
 import com.faktel.mvc.View;
 
 /**
- * GUI of the faktel framework
+ * GUI of the Faktel project
  * 
- * @author valentinmihov
+ * @author teodor.stoev
  */
 public class FakGUI extends JFrame {
-	private static final long serialVersionUID = -3360812071998304818L;
+	private static final long serialVersionUID = 1L;
 	
 	private MainMenu   m_mainMenu;
 	private JList      m_fileList;
@@ -40,21 +40,22 @@ public class FakGUI extends JFrame {
 	public FakGUI() {
 		super();
 		
-		// Init the main menu
+		// Initialize the main menu
 		setJMenuBar(m_mainMenu = new MainMenu());
 		
-		// Init the main container
+		// Initialize the main container
 		m_mainContainer = new Box(BoxLayout.Y_AXIS);
 		add(m_mainContainer);
 		m_mainContainer.setVisible(true);
 		
+		/* Select settings file */
 		{
 			Box row = new Box(BoxLayout.X_AXIS);
 			row.setBorder(BorderFactory.createTitledBorder("Settings file:"));
 			m_mainContainer.add(row);
 			
 			m_settingsFileField = new JTextField();
-			m_settingsFileField.setEnabled(false);
+			m_settingsFileField.setEditable(false);
 			row.add(m_settingsFileField);
 			
 			JButton chooseSettings = new JButton("Open settings");
@@ -62,6 +63,7 @@ public class FakGUI extends JFrame {
 			row.add(chooseSettings);
 		}
 		
+		/* Manage file list */
 		{
 			Box row = new Box(BoxLayout.X_AXIS);
 			row.setBorder(BorderFactory.createTitledBorder("Files list:"));
@@ -90,6 +92,7 @@ public class FakGUI extends JFrame {
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(getPreferredSize());
+		setLocationRelativeTo(null);
 		setVisible(true);
 	}
 	

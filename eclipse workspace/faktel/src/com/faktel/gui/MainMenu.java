@@ -15,7 +15,7 @@ import javax.swing.filechooser.FileFilter;
  * The main menu of the faktel GUI. Also includes some common commands in the
  * GUI.
  * 
- * @author valentinmihov
+ * @author teodor.stoev
  */
 public class MainMenu extends JMenuBar {
 	private static final long serialVersionUID = 7694698099129747446L;
@@ -35,12 +35,22 @@ public class MainMenu extends JMenuBar {
 			JMenuItem open = new JMenuItem("Add invoices...");
 			open.addActionListener(m_openAction);
 			fileMenu.add(open);
+			
+			fileMenu.insertSeparator(2);
+			
+			JMenuItem process = new JMenuItem("Process");
+			process.addActionListener(m_processAction);
+			fileMenu.add(process);
 		}
 		add(fileMenu);
 		
-		JMenuItem process = new JMenuItem("Process");
-		process.addActionListener(m_processAction);
-		add(process);
+		JMenuItem helpMenu = new JMenu("Help");
+		add(helpMenu);
+		{
+			JMenuItem aboutFaktel = new JMenuItem("About...");
+			aboutFaktel.addActionListener(m_openAboutBoxAction);
+			helpMenu.add(aboutFaktel);
+		}
 	}
 
 	/**
@@ -61,7 +71,7 @@ public class MainMenu extends JMenuBar {
 					return "XML Document";
 				}
 			});
-			chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+			chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 			int result = chooser.showOpenDialog(FakGUI.getApplication());
 			
 			if (result == JFileChooser.APPROVE_OPTION) {
@@ -111,6 +121,17 @@ public class MainMenu extends JMenuBar {
 	private ActionListener m_clearFileListAction = new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 			FakGUI.getApplication().clearFileList();
+		}
+	};
+	
+	/**
+	 * A command for displaying the About box 
+	 */
+	private ActionListener m_openAboutBoxAction = new ActionListener() {
+		public void actionPerformed(ActionEvent e) {
+			AboutBox aboutBox = new AboutBox();
+			
+			aboutBox.showDialog();
 		}
 	};
 	

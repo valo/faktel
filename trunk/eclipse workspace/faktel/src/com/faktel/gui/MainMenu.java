@@ -2,7 +2,15 @@ package com.faktel.gui;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.util.logging.Logger;
 import java.util.prefs.Preferences;
 
 import javax.swing.JFileChooser;
@@ -72,11 +80,73 @@ public class MainMenu extends JMenuBar {
 			
 			if (result == JFileChooser.APPROVE_OPTION) {
 				FakGUI.getApplication().setSettingsFile(chooser.getSelectedFile());
+				
+				String text = chooser.getSelectedFile().getAbsolutePath() + '\n';
+				
+				File configFile = new File(CONFIG_FILE);
+				Writer output = null;
+				try {
+					output = new BufferedWriter(new OutputStreamWriter(
+							new FileOutputStream(configFile), "UTF8"));
+					output.write(text);
+				} catch (IOException ex) {
+					Logger.getLogger(getClass().getName()).throwing(
+							getClass().getName(), "setSettingsFile", ex);
+				} finally {
+					try {
+						if (output != null) {
+							output.close();
+						}
+					} catch (IOException ex) {
+						Logger.getLogger(getClass().getName()).throwing(
+								getClass().getName(), "setSettingsFile", ex);
+					}
+				}
+				
 				Preferences.systemNodeForPackage(FakGUI.class).put(LAST_SETTINGS_FOLDER, chooser.getCurrentDirectory().getAbsolutePath());
 			}
 		}
 	};
 
+	/**
+	 * The name of the file that contains last configuration - selected
+	 * settings file, etc.
+	 */
+	private static final String CONFIG_FILE = "SavedConfiguration.cfg";
+	// TODO: this is relative path!!!
+	
+	/**
+	 * Reads the name of last used settings file.
+	 * @return The name of last used settings file.
+	 */
+	public String readSettingsFileName() {
+		File file = new File(CONFIG_FILE);
+		if (! file.exists()) {
+			return "";
+		}
+		BufferedReader input = null;
+		try {
+			input = new BufferedReader(new FileReader(file));
+			String settingsFileName = input.readLine();
+			if (settingsFileName != null) {
+				return settingsFileName;
+			}
+		} catch (IOException e) {
+			Logger.getLogger(getClass().getName()).throwing(
+					getClass().getName(), "setSettingsFile", e);
+		} finally {
+			if (input != null) {
+				try {
+					input.close();
+				} catch (IOException e) {
+					Logger.getLogger(getClass().getName()).throwing(
+							getClass().getName(), "setSettingsFile", e);
+				}
+			}
+		}
+		return "";
+	}
+	
 	private ActionListener m_editSettingsAction = new ActionListener() {
 
 		@Override

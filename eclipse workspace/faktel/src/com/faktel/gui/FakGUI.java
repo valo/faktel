@@ -57,13 +57,16 @@ public class FakGUI extends JFrame {
 			
 			m_settingsFileField = new JTextField();
 			m_settingsFileField.setEditable(false);
+			setSettingsFile(new File(m_mainMenu.readSettingsFileName()));
 			row.add(m_settingsFileField);
-			
+
 			JButton chooseSettings = new JButton("Open settings");
+			chooseSettings.setMnemonic('O');
 			chooseSettings.addActionListener(m_mainMenu.getFileOpenSettingsAction());
 			row.add(chooseSettings);
 
 			JButton editSettings = new JButton("Edit settings");
+			editSettings.setMnemonic('E');
 			editSettings.addActionListener(m_mainMenu.getFileEditSettingsAction());
 			row.add(editSettings);
 
@@ -84,14 +87,17 @@ public class FakGUI extends JFrame {
 			row.add(buttonsArea);
 			
 			JButton addFilesButton = new JButton("Add invoices");
+			addFilesButton.setMnemonic('A');
 			addFilesButton.addActionListener(m_mainMenu.getFileOpenAction());
 			buttonsArea.add(addFilesButton);
 
 			JButton clearFilesButton = new JButton("Clear list");
+			clearFilesButton.setMnemonic('C');
 			clearFilesButton.addActionListener(m_mainMenu.getFileClearAction());
 			buttonsArea.add(clearFilesButton);
 
 			JButton processButton = new JButton("Process");
+			processButton.setMnemonic('P');
 			processButton.addActionListener(m_mainMenu.getProcessAction());
 			buttonsArea.add(processButton);
 		}
@@ -117,7 +123,7 @@ public class FakGUI extends JFrame {
 	 * @param settingsFile The settings file
 	 */
 	public void setSettingsFile(File settingsFile) {
-		m_settingsFileField.setText(settingsFile.getName());
+		m_settingsFileField.setText(settingsFile.getAbsolutePath());
 		m_settingsFile = settingsFile;
 	}
 	

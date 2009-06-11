@@ -51,7 +51,7 @@ public class DummyFilter implements RowFilter {
 		
 		//append result from other filter too :)
 		res.addAll(
-				new BreakInvoiceIntoSingleNumberInvoices().execute(model,
+				new BreakInvoiceIntoSingleNumberInvoices(null).execute(model,
 						workingDir, allFiltersDir));
 		return res; 
 	}

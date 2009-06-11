@@ -19,6 +19,9 @@ public class BreakInvoiceIntoSingleNumberInvoices implements RowFilter {
 			.getName()
 			+ ".smallInvoices HashMap<String, InvoiceRows>";
 
+	public BreakInvoiceIntoSingleNumberInvoices(FilterArgs args) {
+	}
+
 	public boolean cleanup(Model model, File workingDir, File commonDir) {
 		return true;
 	}

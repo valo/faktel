@@ -16,8 +16,6 @@ import javax.swing.JTextField;
 
 import com.faktel.FakEngine;
 import com.faktel.config.ConfigParser;
-import com.faktel.mvc.Grid;
-import com.faktel.mvc.GridRow;
 import com.faktel.mvc.View;
 
 /**
@@ -168,13 +166,6 @@ public class FakGUI extends JFrame {
 			
 			setSize(getPreferredSize());
 			
-			// FIXME: debug
-			Grid grid = new Grid();
-			grid.add(new GridRow(new Object[] {"Apples", "Oranges", "Mangos", "Grapes"}));
-			grid.add(new GridRow(new Object[] { 10, 8, 13, 22 }));
-			grid.add(new GridRow(new Object[] { 3, 17, 22, 56 }));
-			getView("table").displayGrid(grid);
-			getView("pie").displayGrid(grid);
 			FakEngine engine = new FakEngine(parser);
 			engine.process();
 		} 

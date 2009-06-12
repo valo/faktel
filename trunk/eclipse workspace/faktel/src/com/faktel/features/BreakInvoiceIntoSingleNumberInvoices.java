@@ -10,16 +10,23 @@ import com.faktel.InvoiceRows;
 import com.faktel.Utils;
 import com.faktel.filters.FilterArgs;
 import com.faktel.filters.RowFilter;
+import com.faktel.gui.FakGUI;
 import com.faktel.mvc.Grid;
 import com.faktel.mvc.GridRow;
 import com.faktel.mvc.Model;
+import com.faktel.mvc.View;
 
 public class BreakInvoiceIntoSingleNumberInvoices implements RowFilter {
+	private String m_outputViewName;
+	
 	public static final String POOL_DATA_SMALL_INVOICES = BreakInvoiceIntoSingleNumberInvoices.class
 			.getName()
 			+ ".smallInvoices HashMap<String, InvoiceRows>";
 
 	public BreakInvoiceIntoSingleNumberInvoices(FilterArgs args) {
+		if (args.get("outputView") != null && args.get("outputView").size() >= 1) {
+			m_outputViewName = args.get("outputView").iterator().next();
+		}
 	}
 
 	public boolean cleanup(Model model, File workingDir, File commonDir) {
@@ -49,9 +56,11 @@ public class BreakInvoiceIntoSingleNumberInvoices implements RowFilter {
 			rowsConuter++;
 		}
 
-		res.add(new GridRow(new Object[] { new String("Invoice split into "
+		res.add(new GridRow(new Object[] { "Invoice split into "
 				+ invoicesCounter + " single-number invoices " + rowsConuter
-				+ " rows in total.") }));
+				+ " rows in total.",
+				"Number of entries",
+				""}));
 
 		// dump small invoice sizes to output
 		Set<Entry<String, InvoiceRows>> entries = allNumbers.entrySet();
@@ -74,6 +83,15 @@ public class BreakInvoiceIntoSingleNumberInvoices implements RowFilter {
 		model.getDataPool().put(
 				BreakInvoiceIntoSingleNumberInvoices.POOL_DATA_SMALL_INVOICES,
 				allNumbers);
+		
+		if (m_outputViewName != null && FakGUI.getApplication() != null) {
+			View outputView = FakGUI.getApplication().getView(m_outputViewName);
+			
+			if (outputView != null) {
+				outputView.displayGrid(res);
+			}
+		}
+		
 		return res;
 	}
 

@@ -59,7 +59,6 @@ public class ConfigFileEditor extends JDialog {
 		JButton okButton = new JButton("Save");
 		okButton.addActionListener(new ActionListener() {
 
-			@Override
 			public void actionPerformed(ActionEvent e) {
 				writeFile(textArea.getText());
 				ConfigFileEditor.this.setVisible(false);
@@ -71,7 +70,6 @@ public class ConfigFileEditor extends JDialog {
 		JButton cancelButton = new JButton("Cancel");
 		cancelButton.addActionListener(new ActionListener() {
 
-			@Override
 			public void actionPerformed(ActionEvent e) {
 				ConfigFileEditor.this.setVisible(false);
 			}

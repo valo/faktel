@@ -22,7 +22,7 @@ public class AboutBox extends JDialog {
 	public AboutBox() {
 		setResizable(false);
 		setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
-		setModalityType(ModalityType.APPLICATION_MODAL);
+//		setModalityType(ModalityType.APPLICATION_MODAL);
 		this.setTitle("About Faktel");
 		
 		//Create a panel and add the buttons
@@ -53,7 +53,6 @@ public class AboutBox extends JDialog {
 	}
 	
 	private class CloseButtonListener implements ActionListener {
-		@Override
 		public void actionPerformed(ActionEvent arg0) {
 			setVisible(false);
 		}

@@ -103,7 +103,9 @@ public class FakGUI extends JFrame {
 		}
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(getPreferredSize());
+		Dimension size = getPreferredSize();
+		size.width = 600;
+		setSize(size);
 		setLocationRelativeTo(null);
 		setVisible(true);
 	}

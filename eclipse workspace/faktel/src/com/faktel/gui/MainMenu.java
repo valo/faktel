@@ -18,7 +18,6 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
-import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  * The main menu of the faktel GUI. Also includes some common commands in the
@@ -75,7 +74,7 @@ public class MainMenu extends JMenuBar {
 		public void actionPerformed(ActionEvent e) {
 			JFileChooser chooser = new JFileChooser();
 			chooser.setCurrentDirectory(new File(Preferences.systemNodeForPackage(FakGUI.class).get(LAST_SETTINGS_FOLDER, ".")));
-			chooser.setFileFilter(new FileNameExtensionFilter("XML Document", "xml"));
+//			chooser.setFileFilter(new FileNameExtensionFilter("XML Document", "xml"));
 			int result = chooser.showOpenDialog(FakGUI.getApplication());
 			
 			if (result == JFileChooser.APPROVE_OPTION) {
@@ -149,7 +148,6 @@ public class MainMenu extends JMenuBar {
 	
 	private ActionListener m_editSettingsAction = new ActionListener() {
 
-		@Override
 		public void actionPerformed(ActionEvent e) {
 			File settingsFile = FakGUI.getApplication().getSettingsFile();
 			if (settingsFile != null && settingsFile.exists()) {
@@ -171,7 +169,7 @@ public class MainMenu extends JMenuBar {
 		public void actionPerformed(ActionEvent e) {
 			JFileChooser chooser = new JFileChooser();
 			chooser.setCurrentDirectory(new File(Preferences.systemNodeForPackage(FakGUI.class).get(LAST_INVOICES_FOLDER, ".")));
-			chooser.setFileFilter(new FileNameExtensionFilter("Excel and CSV files", "xls", "csv"));
+//			chooser.setFileFilter(new FileNameExtensionFilter("Excel and CSV files", "xls", "csv"));
 			chooser.setMultiSelectionEnabled(true);
 			//chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 			int result = chooser.showOpenDialog(FakGUI.getApplication());

@@ -30,6 +30,7 @@ public class FakGUI extends JFrame {
 	private JList      m_fileList;
 	private File       m_settingsFile;
 	private Box		   m_mainContainer;
+	private Box		   m_outputContainer;
 	private JTextField m_settingsFileField;
 
 	private Map<String, View> m_viewMapping;
@@ -99,6 +100,9 @@ public class FakGUI extends JFrame {
 			processButton.addActionListener(m_mainMenu.getProcessAction());
 			buttonsArea.add(processButton);
 		}
+		
+		m_outputContainer = new Box(BoxLayout.Y_AXIS);
+		m_mainContainer.add(m_outputContainer);
 
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		Dimension size = getPreferredSize();
@@ -161,7 +165,8 @@ public class FakGUI extends JFrame {
 		ConfigParser parser;
 		try {
 			parser = new ConfigParser(configFile);
-			m_mainContainer.add(parser.getLayout());
+			m_outputContainer.removeAll();
+			m_outputContainer.add(parser.getLayout());
 			m_viewMapping = parser.getViewMapping();
 			
 			setSize(getPreferredSize());

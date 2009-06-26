@@ -55,6 +55,8 @@ public class TestDummyFilter extends TestCase {
 		
 		assertEquals("8935901087001667308", result.get(4).get().get(0).toString());
 		assertEquals("359887061866", result.get(4).get().get(1).toString());
+		
+		DirDeleteUtil.deleteDirectory(runDir);
 	}
 
 }

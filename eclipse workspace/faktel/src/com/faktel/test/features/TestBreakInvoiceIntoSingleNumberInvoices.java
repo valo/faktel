@@ -73,6 +73,8 @@ public class TestBreakInvoiceIntoSingleNumberInvoices extends TestCase {
 		breakdownFileName = workingDir.getAbsolutePath() + File.separator + "359886754425.xls";
 		breakdownFile = new File(breakdownFileName);
 		assertTrue(breakdownFile.exists());
+		
+		DirDeleteUtil.deleteDirectory(runDir);
 	}
 	
 }

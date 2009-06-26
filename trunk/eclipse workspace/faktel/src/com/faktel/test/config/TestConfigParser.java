@@ -32,7 +32,7 @@ public class TestConfigParser extends TestCase {
 		assertNotNull(m_parser.getOutputWriters());
 		
 		Collection<OutputWriter> writers = m_parser.getOutputWriters();
-		assertEquals(false, writers.isEmpty());
+		assertFalse(writers.isEmpty());
 	}
 
 	public void testHasLayout() {

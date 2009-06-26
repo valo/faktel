@@ -43,10 +43,10 @@ public class TestMappingParser extends TestCase {
 		}
 		String[] fields = new String[] { "SIM Карта", "Телефонен номер", "Описание на услугата" };
 		
-		assertEquals(true, MappingParser.checkIfMappingForAllFieldsExists(fields, mapping));
+		assertTrue(MappingParser.checkIfMappingForAllFieldsExists(fields, mapping));
 		
 		fields = new String[] { "SIM Карта", "Телефонен номер", "Описание на услугата", "Несъществуващо" };
 		
-		assertEquals(false, MappingParser.checkIfMappingForAllFieldsExists(fields, mapping));
+		assertTrue(MappingParser.checkIfMappingForAllFieldsExists(fields, mapping));
 	}
 }
